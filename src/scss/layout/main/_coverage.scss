@@ -1,0 +1,122 @@
+section.coverage {
+    max-width: 1504px;
+    background: #FCFCFC;
+    border-radius: 24px;
+    text-align: center;
+    padding: 80px 15px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .coverage__title {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 101.99%;
+        color: $primary;
+    }
+    .coverage__subtitle {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        color: $gray-800;
+    }
+
+    .map-wrapper {
+        position: relative;
+        .map-legend {
+            display: flex;
+            width: max-content;
+            gap: 65px;
+            margin: 0 auto;
+            &__item {
+                display: flex;
+                align-self: center;
+                gap:8px;
+                &--text {
+                    font-family: 'Red Hat Display';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: $gray-800;
+                }
+                &--available {
+                    background-color: $primary;
+                }
+                &--soon {
+                    background-color: $primary;
+                    opacity: 0.5;
+                }
+                &--planning {
+                    background-color: $gray-600;
+                }
+                & div {
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 2px;
+                }
+            }
+        }
+        #planning path {
+            opacity: 0.5;
+            fill: $gray-600;
+        }
+        #nowavailalble path, #soon path {
+            fill: $primary;
+        }
+        #soon path {
+            opacity: 0.5;
+        }           
+    }
+    .pay__method {
+        background: $white;
+        border: 1px solid #E8EAED;
+        border-radius: 4px;
+        border-radius: 20px;
+        max-width: 1170px;
+        width: 100%;
+        min-width: 322px;
+        min-height: 192px;
+        margin: 0 auto;
+        padding: 32px 0;
+        padding-bottom: 24px;
+        display: flex;
+            &-item {
+            width: 80px;
+            height: 48px;
+            padding: 12px 13px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #E8EAED;
+            border-radius: 4px;
+            box-shadow: 0px 8px 40px #e8eaed;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                transition: opacity 0.2s ease-in-out;
+                will-change: opacity;
+                opacity: 1;
+                display: block;
+             // loi la gi day
+            //a thay roi sai ten //em lam tiep di :>
+            }
+            &-name{
+                font-family:  monospace !important;
+                display: block;
+                font-size: 12px;
+                margin-top: 16px;
+                height: 36px;
+                max-width: 103px;
+                font-weight: 500;
+                line-height: 18px;
+            }
+        }
+    }
+}

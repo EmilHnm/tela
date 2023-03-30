@@ -209,6 +209,11 @@ section.hero {
   margin: 0 auto;
   height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  section.hero {
+    padding: 4rem 0;
+  }
+}
 section.hero .container {
   display: flex;
   flex-direction: row;
@@ -217,7 +222,7 @@ section.hero .container {
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 768px) {
   section.hero .container {
     flex-direction: column;
   }
@@ -225,9 +230,10 @@ section.hero .container {
 section.hero .container .content {
   width: 50%;
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 768px) {
   section.hero .container .content {
     width: 100%;
+    margin-bottom: 2rem;
   }
 }
 section.hero .container .content .hero__title {
@@ -242,7 +248,7 @@ section.hero .container .content .hero__title {
   background-clip: text;
   margin: auto;
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 768px) {
   section.hero .container .content .hero__title {
     font-size: 32px;
   }
@@ -263,14 +269,146 @@ section.hero .container .content .hero__button {
   font-size: 14px;
   line-height: 19px;
 }
-section.hero .container .image {
+section.hero .container .box {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 50%;
+  height: 80%;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  section.hero .container .box {
+    width: 100%;
+  }
+}
+section.hero .container .box iframe {
+  display: block;
+  max-width: 470px;
+  margin: 0 auto;
+}
+
+section.introduce {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 160px;
+  position: relative;
+}
+section.introduce .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  section.introduce .container {
+    flex-direction: column;
+  }
+}
+section.introduce .container .content {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  section.introduce .container .content {
+    width: 100%;
+  }
+}
+section.introduce .container .content .introduce__title {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 101.99%;
+  color: #4479FF;
+}
+@media screen and (max-width: 768px) {
+  section.introduce .container .content .introduce__title {
+    display: none;
+  }
+}
+section.introduce .container .content .introduce__title.tablet {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 101.99%;
+  align-items: center;
+  color: #4479FF;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  section.introduce .container .content .introduce__title.tablet {
+    font-size: 24px;
+    line-height: 32px;
+    display: block;
+  }
+}
+section.introduce .container .content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.introduce .container .content p {
+    display: none;
+  }
+}
+section.introduce .container .content .introduce__button {
+  margin-top: 20px;
+}
+section.introduce .container .tabs {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  section.introduce .container .tabs {
+    width: 100%;
+  }
+}
+section.introduce .container .tabs .section__code {
+  display: flex;
+  box-shadow: 0px 24px 40px #e8eaed;
+  background: #FFFFFF;
+  border-radius: 24px;
+  max-height: 312px;
+  max-width: 570px;
+}
+section.introduce .container .tabs .section__code .section__code-side {
+  background: #FCFCFC;
+  padding-top: 24px;
+  width: 32px;
+  font-family: "Roboto mono", monospace;
+}
+section.introduce .container .tabs .section__code .section__code-side .section__code-side-item {
+  font-size: 12px;
+  line-height: 24px;
+  color: #6C7689;
+  text-align: right;
+  margin-right: 6px;
+}
+section.introduce .container .tabs .section__code .section__code-code {
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 16px;
+  padding-right: 29p;
+  padding-top: 24px;
+  font-family: "Roboto mono", monospace;
+}
+section.introduce .container .tabs .section__code .section__code-code .token.keyword {
+  color: #00A769;
+}
+section.introduce .container .tabs .section__code .section__code-code .token.class-name {
+  color: #FF9300;
+}
+section.introduce .container .tabs .section__code .section__code-code .token.comment {
+  color: #A4AEC1;
+}
+section.introduce .container .tabs .section__code .section__code-code .token.string {
+  color: #00705B;
 }
 
 section.features {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 160px;
   position: relative;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 section.features::after {
   content: "";
@@ -288,8 +426,17 @@ section.features .container {
   position: relative;
   background-color: #fff;
   border-radius: 24px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  max-width: 1504px;
+  margin: auto;
+  padding: 50px 50px 50px 100px;
+}
+@media screen and (max-width: 768px) {
+  section.features .container {
+    flex-direction: column;
+    padding: 48px 0;
+  }
 }
 section.features .container::after {
   position: absolute;
@@ -304,7 +451,13 @@ section.features .container::after {
 }
 section.features .container .content {
   width: 50%;
-  padding: 50px 50px 50px 100px;
+}
+@media screen and (max-width: 768px) {
+  section.features .container .content {
+    padding: 0 16px;
+    width: 100%;
+    text-align: center;
+  }
 }
 section.features .container .content .features__title {
   font-family: "Red Hat Display";
@@ -313,6 +466,12 @@ section.features .container .content .features__title {
   font-size: 40px;
   line-height: 101.99%;
   color: #4479FF;
+}
+@media screen and (max-width: 768px) {
+  section.features .container .content .features__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 section.features .container .content .features_item {
   color: #212529;
@@ -331,14 +490,40 @@ section.features .container .content .features_item h3 {
   line-height: 32px;
   margin-bottom: 5px;
 }
+@media screen and (max-width: 768px) {
+  section.features .container .content .features_item h3 {
+    font-size: 16px;
+  }
+}
 section.features .container .content .features_item p {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
 }
+@media screen and (max-width: 768px) {
+  section.features .container .content .features_item p {
+    display: none;
+  }
+}
+section.features .container .content #features_desciption {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 101.99%;
+  color: #4479FF;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  section.features .container .content #features_desciption {
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+  }
+}
 section.features .container .tabs {
   max-width: 470px;
-  width: 100%;
+  width: max-content;
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -346,12 +531,130 @@ section.features .container .tabs {
   justify-content: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  padding: 25px;
 }
 section.features .container .tabs video {
   max-width: 390px;
   max-height: 351px;
   margin: auto 0;
+}
+
+section.coverage {
+  max-width: 1504px;
+  background: #FCFCFC;
+  border-radius: 24px;
+  text-align: center;
+  padding: 80px 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section.coverage .coverage__title {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 101.99%;
+  color: #4479FF;
+}
+section.coverage .coverage__subtitle {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #343a40;
+}
+section.coverage .map-wrapper {
+  position: relative;
+}
+section.coverage .map-wrapper .map-legend {
+  display: flex;
+  width: max-content;
+  gap: 65px;
+  margin: 0 auto;
+}
+section.coverage .map-wrapper .map-legend__item {
+  display: flex;
+  align-self: center;
+  gap: 8px;
+}
+section.coverage .map-wrapper .map-legend__item--text {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #343a40;
+}
+section.coverage .map-wrapper .map-legend__item--available {
+  background-color: #4479FF;
+}
+section.coverage .map-wrapper .map-legend__item--soon {
+  background-color: #4479FF;
+  opacity: 0.5;
+}
+section.coverage .map-wrapper .map-legend__item--planning {
+  background-color: #6c757d;
+}
+section.coverage .map-wrapper .map-legend__item div {
+  width: 26px;
+  height: 26px;
+  border-radius: 2px;
+}
+section.coverage .map-wrapper #planning path {
+  opacity: 0.5;
+  fill: #6c757d;
+}
+section.coverage .map-wrapper #nowavailalble path, section.coverage .map-wrapper #soon path {
+  fill: #4479FF;
+}
+section.coverage .map-wrapper #soon path {
+  opacity: 0.5;
+}
+section.coverage .pay__method {
+  background: #fff;
+  border: 1px solid #E8EAED;
+  border-radius: 4px;
+  border-radius: 20px;
+  max-width: 1170px;
+  width: 100%;
+  min-width: 322px;
+  min-height: 192px;
+  margin: 0 auto;
+  padding: 32px 0;
+  padding-bottom: 24px;
+  display: flex;
+}
+section.coverage .pay__method-item {
+  width: 80px;
+  height: 48px;
+  padding: 12px 13px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #E8EAED;
+  border-radius: 4px;
+  box-shadow: 0px 8px 40px #e8eaed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section.coverage .pay__method-item img {
+  transition: opacity 0.2s ease-in-out;
+  will-change: opacity;
+  opacity: 1;
+  display: block;
+}
+section.coverage .pay__method-item-name {
+  font-family: monospace !important;
+  display: block;
+  font-size: 12px;
+  margin-top: 16px;
+  height: 36px;
+  max-width: 103px;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 .btn {
