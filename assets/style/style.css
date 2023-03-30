@@ -624,8 +624,11 @@ section.coverage .pay__method {
   padding: 32px 0;
   padding-bottom: 24px;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-section.coverage .pay__method-item {
+section.coverage .pay__method-item-img {
   width: 80px;
   height: 48px;
   padding: 12px 13px;
@@ -634,17 +637,14 @@ section.coverage .pay__method-item {
   border: 1px solid #E8EAED;
   border-radius: 4px;
   box-shadow: 0px 8px 40px #e8eaed;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
-section.coverage .pay__method-item img {
+section.coverage .pay__method-item-img img {
   transition: opacity 0.2s ease-in-out;
   will-change: opacity;
   opacity: 1;
-  display: block;
 }
 section.coverage .pay__method-item-name {
   font-family: monospace !important;
