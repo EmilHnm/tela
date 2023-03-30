@@ -1,0 +1,82 @@
+header {
+    background: transparent;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    & .container {
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+    }
+    & .logo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: left;
+        margin-right: auto;
+        flex: 1;
+        padding-left: 80px;
+        & img {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+        }
+        & span {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: $secondary;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+    }
+    & .menu-toggle {
+        display: flex;
+        margin-left: auto;
+        justify-content: right;
+        flex: 1;
+        padding-right: 80px;
+        button {
+            background: transparent;
+            outline: none;
+            border: 0;
+            cursor: pointer;
+            display: none;
+            @media screen and (max-width: $mobile-viewport) {
+                display: block;
+            }
+                
+        }
+    }
+
+    & .nav {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        ul {
+            display: flex;
+            gap: 20px;
+            padding: 10px 27px;
+            border-radius: 62px;
+            border: 1px solid $gray-600;
+            align-items: center;
+            width: max-content;
+            background: $white;
+            & a {
+                font-size:14px;
+                font-weight: 400;
+                color: $secondary;
+                font-family: 'Red Hat Display', sans-serif;
+                text-decoration: none;
+                color: $gray-900;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

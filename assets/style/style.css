@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  background: transparent;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+header .container {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: left;
+  margin-right: auto;
+  flex: 1;
+  padding-left: 80px;
+}
+header .logo img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+header .logo span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #072156;
+  font-family: "Red Hat Display", sans-serif;
+}
+header .menu-toggle {
+  display: flex;
+  margin-left: auto;
+  justify-content: right;
+  flex: 1;
+  padding-right: 80px;
+}
+header .menu-toggle button {
+  background: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 490px) {
+  header .menu-toggle button {
+    display: block;
+  }
+}
+header .nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+header .nav ul {
+  display: flex;
+  gap: 20px;
+  padding: 10px 27px;
+  border-radius: 62px;
+  border: 1px solid #6c757d;
+  align-items: center;
+  width: max-content;
+  background: #fff;
+}
+header .nav ul a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #072156;
+  font-family: "Red Hat Display", sans-serif;
+  text-decoration: none;
+  color: #212529;
+  transition: all 0.3s ease-in-out;
+}
+header .nav ul a:hover {
+  color: #4479FF;
+}
+
+@media screen and (max-width: 490px) {
+  main {
+    margin-top: 80px;
+  }
+}
+
+section.hero {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+}
+section.hero .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 490px) {
+  section.hero .container {
+    flex-direction: column;
+  }
+}
+section.hero .container .content {
+  width: 50%;
+}
+@media screen and (max-width: 490px) {
+  section.hero .container .content {
+    width: 100%;
+  }
+}
+section.hero .container .content .hero__title {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  background: linear-gradient(264.63deg, #4479FF 48.72%, #072156 127.51%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: auto;
+}
+@media screen and (max-width: 490px) {
+  section.hero .container .content .hero__title {
+    font-size: 32px;
+  }
+}
+section.hero .container .content .hero__subtitle {
+  margin: 15px auto;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #212529;
+}
+section.hero .container .content .hero__button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+section.hero .container .image {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+section.features {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+section.features::after {
+  content: "";
+  position: absolute;
+  display: block;
+  clear: both;
+  background-image: url("/assets/images/feature-bg.png");
+  width: 100%;
+  height: 100%;
+  top: -50%;
+  left: -75%;
+}
+section.features .container {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+}
+section.features .container::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(105.65deg, #4479FF 0.55%, #A9CAFF 51.42%, #4479FF 99.2%);
+  content: "";
+  z-index: -1;
+  border-radius: 25px;
+}
+section.features .container .content {
+  width: 50%;
+  padding: 50px 50px 50px 100px;
+}
+section.features .container .content .features__title {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 101.99%;
+  color: #4479FF;
+}
+section.features .container .content .features_item {
+  color: #212529;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  margin: 25px auto;
+  user-select: none;
+  cursor: pointer;
+}
+section.features .container .content .features_item.active {
+  color: #4479FF;
+}
+section.features .container .content .features_item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 5px;
+}
+section.features .container .content .features_item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+section.features .container .tabs {
+  max-width: 470px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 25px;
+}
+section.features .container .tabs video {
+  max-width: 390px;
+  max-height: 351px;
+  margin: auto 0;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 9px 25px;
+  gap: 10px;
+  background: #4479FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  color: #fff;
+  outline: none;
+  width: max-content;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*# sourceMappingURL=style.css.map */
