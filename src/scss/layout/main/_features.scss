@@ -65,8 +65,29 @@ section.features {
                 margin: 25px auto;
                 user-select: none;
                 cursor: pointer;
+                position: relative;
+                &::after{
+                    content: "";
+                    display: block;
+                    position:absolute;
+                    left: -16px;
+                    bottom: 0;
+                    top:0;
+                    border: 2px solid #f1eeeecc;
+                }
                 &.active {
                     color: $primary;
+                        &::after{
+                            content: "";
+                            display: block;
+                            position:absolute;
+                            left: -16px;
+                            bottom: 0;
+                            top:0;
+                            border: 2px solid $primary;
+    
+                        }
+                 
                 }
                 & h3 {
                     font-weight: 700;
