@@ -814,6 +814,11 @@ section.coverage .map-wrapper .map-legend__item {
   align-self: center;
   gap: 8px;
 }
+@media screen and (max-width: 768px) {
+  section.coverage .map-wrapper .map-legend__item {
+    align-items: center;
+  }
+}
 section.coverage .map-wrapper .map-legend__item--text {
   font-family: "Red Hat Display";
   font-style: normal;
@@ -842,6 +847,12 @@ section.coverage .map-wrapper .map-legend__item div {
   width: 26px;
   height: 26px;
   border-radius: 2px;
+}
+@media screen and (max-width: 768px) {
+  section.coverage .map-wrapper .map-legend__item div {
+    width: 20px;
+    height: 20px;
+  }
 }
 section.coverage .map-wrapper #planning path {
   opacity: 0.5;

@@ -102,7 +102,9 @@ section.coverage {
                 display: flex;
                 align-self: center;
                 gap:8px;
-                
+                @media screen and (max-width: 768px) {
+                    align-items: center;
+                }
                 &--text {
                     font-family: 'Red Hat Display';
                     font-style: normal;
@@ -129,6 +131,10 @@ section.coverage {
                     width: 26px;
                     height: 26px;
                     border-radius: 2px;
+                    @media screen and (max-width: 768px) {
+                       width: 20px;
+                       height: 20px;
+                    }
                 }
             }
         }
