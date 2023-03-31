@@ -103,6 +103,9 @@ section.coverage {
                 display: flex;
                 align-self: center;
                 gap:8px;
+                @media screen and (max-width: 768px) {
+                    align-self: auto;
+                }
                 &--text {
                     font-family: 'Red Hat Display';
                     font-style: normal;

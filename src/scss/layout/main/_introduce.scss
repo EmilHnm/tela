@@ -3,6 +3,9 @@ section.introduce {
     margin: 0 auto;
     margin-bottom: 160px;
     position: relative;
+    @media screen and (max-width: $mobile-viewport) {
+        margin-bottom: 0;
+    }
     .container {
         display: flex;
         flex-direction: row;
@@ -12,6 +15,14 @@ section.introduce {
         margin: auto;
         @media screen and (max-width: $tablet-viewport) {
             flex-direction: column;
+        }
+        .container__btn-mobie{
+            display: none ; 
+            justify-content: center;
+            margin-top: 20px;
+            @media screen and (max-width: $mobile-viewport) {
+                display: flex;
+            }
         }
         .content {
             width: 50%;
@@ -58,7 +69,11 @@ section.introduce {
 
             & .introduce__button {
                 margin-top: 20px;
+                @media screen and (max-width: $mobile-viewport) {
+                    display: none;
+                }
             }
+         
         }
         .code__content {
             width: 50%;

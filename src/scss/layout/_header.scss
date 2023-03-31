@@ -7,6 +7,9 @@ header {
     right: 0;
     z-index: 999;
     transition: all 0.3s ease-in-out;
+    @media screen and (max-width: $tablet-viewport) {
+        background-color: $white;
+    }
     & .container {
         width: 100%;
         margin: 20px 0;
