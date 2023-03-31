@@ -96,16 +96,13 @@ section.coverage {
             margin: 0 auto;
             margin-top: 52px;
             @media screen and (max-width: 768px) {
-                gap: 30px;
-                flex-direction: column;
+                gap: 15px;
             }
             &__item {
                 display: flex;
                 align-self: center;
                 gap:8px;
-                @media screen and (max-width: 768px) {
-                    align-self: auto;
-                }
+                
                 &--text {
                     font-family: 'Red Hat Display';
                     font-style: normal;
@@ -113,6 +110,10 @@ section.coverage {
                     font-size: 16px;
                     line-height: 26px;
                     color: $gray-800;
+                    @media screen and (max-width: 768px) {
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
                 }
                 &--available {
                     background-color: $primary;
