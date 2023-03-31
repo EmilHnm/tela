@@ -616,9 +616,28 @@ section.features .container .content .features_item {
   margin: 25px auto;
   user-select: none;
   cursor: pointer;
+  position: relative;
+}
+section.features .container .content .features_item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -16px;
+  bottom: 0;
+  top: 0;
+  border: 2px solid rgba(241, 238, 238, 0.8);
 }
 section.features .container .content .features_item.active {
   color: #4479FF;
+}
+section.features .container .content .features_item.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -16px;
+  bottom: 0;
+  top: 0;
+  border: 2px solid #4479FF;
 }
 section.features .container .content .features_item h3 {
   font-weight: 700;
@@ -787,19 +806,13 @@ section.coverage .map-wrapper .map-legend {
 }
 @media screen and (max-width: 768px) {
   section.coverage .map-wrapper .map-legend {
-    gap: 30px;
-    flex-direction: column;
+    gap: 15px;
   }
 }
 section.coverage .map-wrapper .map-legend__item {
   display: flex;
   align-self: center;
   gap: 8px;
-}
-@media screen and (max-width: 768px) {
-  section.coverage .map-wrapper .map-legend__item {
-    align-self: auto;
-  }
 }
 section.coverage .map-wrapper .map-legend__item--text {
   font-family: "Red Hat Display";
@@ -808,6 +821,12 @@ section.coverage .map-wrapper .map-legend__item--text {
   font-size: 16px;
   line-height: 26px;
   color: #343a40;
+}
+@media screen and (max-width: 768px) {
+  section.coverage .map-wrapper .map-legend__item--text {
+    font-size: 12px;
+    font-weight: 700;
+  }
 }
 section.coverage .map-wrapper .map-legend__item--available {
   background-color: #4479FF;
