@@ -21,6 +21,9 @@ header {
         margin-right: auto;
         flex: 1;
         padding-left: 80px;
+        @media screen and (max-width: $tablet-viewport) {
+            padding-left: 10px;
+        }
         & img {
             width: 25px;
             height: 25px;
@@ -30,7 +33,7 @@ header {
             font-size: 1.5rem;
             font-weight: 900;
             color: $secondary;
-            font-family: 'Red Hat Display', sans-serif;
+            font-family: "Red Hat Display", sans-serif;
         }
     }
     & .menu-toggle {
@@ -39,16 +42,18 @@ header {
         justify-content: right;
         flex: 1;
         padding-right: 80px;
+        @media screen and (max-width: $tablet-viewport) {
+            padding-right: 10px;
+        }
         button {
+            @media screen and (max-width: $tablet-viewport) {
+                display: block;
+            }
             background: transparent;
             outline: none;
             border: 0;
             cursor: pointer;
             display: none;
-            @media screen and (max-width: $mobile-viewport) {
-                display: block;
-            }
-                
         }
     }
 
@@ -56,6 +61,9 @@ header {
         display: flex;
         justify-content: center;
         flex: 1;
+        @media screen and (max-width: $tablet-viewport) {
+            display: none;
+        }
         ul {
             display: flex;
             gap: 20px;
@@ -64,17 +72,99 @@ header {
             border: 1px solid $gray-600;
             align-items: center;
             width: max-content;
-            background: $white;
+            background-color: $white;
             & a {
-                font-size:14px;
+                font-size: 14px;
                 font-weight: 400;
                 color: $secondary;
-                font-family: 'Red Hat Display', sans-serif;
+                font-family: "Red Hat Display", sans-serif;
                 text-decoration: none;
                 color: $gray-900;
                 transition: all 0.3s ease-in-out;
                 &:hover {
                     color: $primary;
+                }
+            }
+        }
+    }
+
+    & .responsive-header {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $white;
+        padding: 26px 0;
+        z-index: 999;
+        transform: translateX(-100%);
+        transition: all 0.2s;
+        &.active {
+            transform: translateX(0);
+        }
+        @media screen and (max-width: $mobile-viewport) {
+            width: 100vw;
+        }
+        &__top {
+            width: calc(100% - 10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            &--logo {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: left;
+                margin-right: auto;
+                flex: 1;
+                padding-left: 10px;
+                & img {
+                    width: 25px;
+                    height: 25px;
+                    object-fit: contain;
+                }
+                & span {
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                    color: $secondary;
+                    font-family: "Red Hat Display", sans-serif;
+                }
+            }
+            &--toggle {
+                display: flex;
+                margin-left: auto;
+                justify-content: right;
+                flex: 1;
+                padding-right: 10px;
+                button {
+                background: transparent;
+                outline: none;
+                border: 0;
+                cursor: pointer;
+                }
+            }
+        }
+        &__menu {
+            margin-top: 40px;
+            width: 100%;
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                a {
+                    display: block;
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: $secondary;
+                    font-family: "Red Hat Display", sans-serif;
+                    text-decoration: none;
+                    color: $gray-900;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: $primary;
+                    }
                 }
             }
         }

@@ -1,12 +1,10 @@
 section.coverage {
     max-width: 1504px;
-    background: #FCFCFC;
     border-radius: 24px;
     text-align: center;
     padding: 80px 15px;
     margin: 0 auto;
     overflow: hidden;
-
     .coverage__title {
         font-family: 'Red Hat Display';
         font-style: normal;
@@ -23,15 +21,84 @@ section.coverage {
         line-height: 21px;
         text-align: center;
         color: $gray-800;
+        a {
+            color: $primary;
+            font-weight: 600;
+        }
     }
-
     .map-wrapper {
         position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            clear: both;
+            background-image: url("/assets/images/feature-bg.png");
+            width: 100%;
+            height: 100%;
+            bottom: 0%;
+            right: -50%;
+            z-index: -1;
+        }
+        #country-popup {
+            pointer-events: none;
+            font-size: 18px;
+            font-family: 'Red Hat Display', sans-serif !important;
+            display: none;
+            flex-direction: column;
+            padding: clamp(10px, 1vw, 20px);
+            background-color: $black;
+            color: $white;
+            border-radius: 20px;
+            text-align: center;
+            position: absolute;
+            will-change: translate;
+            box-sizing: border-box;
+            & strong {
+                font-weight: bold;
+                font-size: clamp(14px, 1vw, 18px)
+            }
+            & ul {
+                display: flex;
+                margin-top: clamp(5px, 1vw, 13px);
+                transition: all 0.3s linear
+            }
+            & ul li {
+                padding: 0 clamp(12px, 1vw, 15px);
+                position: relative;
+                white-space: nowrap;
+                font-size: clamp(12px, 1vw, 18px)
+            }
+            & ul li:not(:last-of-type):after {
+                content: "\2022";
+                right: clamp(-2px, 1vw, -15px);
+                position: absolute
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -8px;
+                left: 50%;
+                transform: translate3d(calc(-50% - var(--shift-amount)), -1px, 0px);
+                will-change: transform;
+                width: 0;
+                height: 0;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                border-top: 8px solid $black;
+            }
+        }
         .map-legend {
             display: flex;
             width: max-content;
             gap: 65px;
             margin: 0 auto;
+            margin-top: 52px;
+            @media screen and (max-width: 768px) {
+                gap: 30px;
+                flex-direction: column;
+            }
             &__item {
                 display: flex;
                 align-self: center;
@@ -74,10 +141,6 @@ section.coverage {
     }
     .pay__method {
         background: $white;
-        border: 1px solid #E8EAED;
-        border-radius: 4px;
-        border-radius: 20px;
-        max-width: 1170px;
         width: 100%;
         min-width: 322px;
         min-height: 192px;
@@ -88,31 +151,31 @@ section.coverage {
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
-            &-item {
-
-                &-img{
-                    width: 80px;
-                    height: 48px;
-                    padding: 12px 13px;
-                    margin: 0 auto;
-                    background: #fff;
-                    border: 1px solid #E8EAED;
-                    border-radius: 4px;
-                    box-shadow: 0px 8px 40px #e8eaed;
-                    //position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    img{
-                        transition: opacity 0.2s ease-in-out;
-                        will-change: opacity;
-                        opacity: 1;
-
-                    }
+        gap: 50px;
+        @media screen  and (max-width: 768px) {
+            gap: 20px;
+        }
+            
+        &-item {
+            &-img {
+                width: 80px;
+                height: 48px;
+                padding: 12px 13px;
+                margin: 0 auto;
+                background: $white;
+                border: 1px solid $gray-200;
+                border-radius: 4px;
+                box-shadow: 0px 8px 40px $gray-200;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    transition: opacity 0.2s ease-in-out;
+                    will-change: opacity;
+                    opacity: 1;
                 }
-
-            &-name{
+            }
+            &-name {
                 font-family:  monospace !important;
                 display: block;
                 font-size: 12px;

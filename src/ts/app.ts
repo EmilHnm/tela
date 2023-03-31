@@ -17,4 +17,13 @@ feature_item.forEach((element: Node) => {
     });
 });
 
+const responsive_header = document.querySelector("#responsive-header");
+const toggleMenu = () => {
+    if(responsive_header)
+    responsive_header.classList.toggle("active");
+}
+document.querySelector("#menu-open")?.addEventListener("click", toggleMenu);
+document.querySelector("#menu-close")?.addEventListener("click", toggleMenu);
+
+
 

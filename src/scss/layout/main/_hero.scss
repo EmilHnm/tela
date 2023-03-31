@@ -26,15 +26,18 @@ section.hero {
                 font-family: 'Red Hat Display';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 64px;
+                font-size: 48px;
                 line-height: 120%;
                 background: $primary-horizontal;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 margin: auto;
-                @media screen and (max-width: $tablet-viewport) {
+                @media screen and (max-width: $screen-viewport) {
                     font-size: 32px;
+                }
+                @media screen and (min-width: 1500px) {
+                    font-size: 64px;
                 }
             }
             & .hero__subtitle {
@@ -59,8 +62,6 @@ section.hero {
             width:  50%;
             height: 80%;
             z-index: 10;
-            // position: relative;
-            // top:10%;
             @media screen and (max-width: $tablet-viewport) {
                 width: 100%;
             }

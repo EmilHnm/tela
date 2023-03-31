@@ -1,0 +1,56 @@
+section.policy{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 84px;
+   @media screen and (max-width: $tablet-viewport) {
+    padding:24px 0px;
+}
+   & .policy__title{
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        text-align: center;
+        background: $primary-horizontal;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: auto;
+        @media screen and (max-width: $screen-viewport) {
+            font-size: 32px;
+        }
+        @media screen and (min-width: 1500px) {
+            font-size: 64px;
+        
+   }
+}
+& .policy__content {
+    margin: 15px auto;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $gray-900;
+    text-align: center;
+    @media screen and (max-width: $tablet-viewport) {
+        display: none;
+    }
+}
+& .policy__content-tablet-viewport{
+    margin: 15px auto;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $gray-900;
+    text-align: center;
+    display: none;
+    @media screen and (max-width: $tablet-viewport) {
+        display: block;
+    }
+}
+}
