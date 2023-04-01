@@ -618,26 +618,30 @@ section.features .container .content .features_item {
   cursor: pointer;
   position: relative;
 }
-section.features .container .content .features_item::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -16px;
-  bottom: 0;
-  top: 0;
-  border: 2px solid rgba(241, 238, 238, 0.8);
+@media screen and (min-width: 768px) {
+  section.features .container .content .features_item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -16px;
+    bottom: 0;
+    top: 0;
+    border: 2px solid rgba(241, 238, 238, 0.8);
+  }
 }
 section.features .container .content .features_item.active {
   color: #4479FF;
 }
-section.features .container .content .features_item.active::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -16px;
-  bottom: 0;
-  top: 0;
-  border: 2px solid #4479FF;
+@media screen and (min-width: 768px) {
+  section.features .container .content .features_item.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -16px;
+    bottom: 0;
+    top: 0;
+    border: 2px solid #4479FF;
+  }
 }
 section.features .container .content .features_item h3 {
   font-weight: 700;
@@ -695,7 +699,7 @@ section.features .container .tabs {
   }
 }
 section.features .container .tabs video {
-  max-width: 390px;
+  width: 390px;
   max-height: 351px;
   margin: auto 0;
 }
