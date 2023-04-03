@@ -472,7 +472,11 @@ section.hero .container .box iframe {
   display: block;
   max-width: 470px;
   margin: 0 auto;
-  min-height: 700px;
+}
+@media screen and (max-width: 768px) {
+  section.hero .container .box iframe {
+    min-height: 700px;
+  }
 }
 
 section.introduce {
