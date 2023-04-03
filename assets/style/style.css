@@ -1497,6 +1497,12 @@ section.mission .container .mission__quotes--text {
   line-height: 48px;
   color: #4479FF;
 }
+@media screen and (max-width: 1024px) {
+  section.mission .container .mission__quotes--text {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
 section.mission .container .mission__quotes--description {
   font-style: normal;
   font-weight: 700;
@@ -1510,6 +1516,9 @@ section.mission .container .mission__content {
   color: #fff;
   padding: 90px;
   padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 section.mission .container .mission__content--title {
   font-style: normal;
@@ -1518,12 +1527,25 @@ section.mission .container .mission__content--title {
   line-height: 102%;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 1024px) {
+  section.mission .container .mission__content--title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 section.mission .container .mission__content--text {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 53px;
+}
+@media screen and (max-width: 1024px) {
+  section.mission .container .mission__content--text {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+  }
 }
 section.mission .container .mission__content--text p {
   margin-bottom: 16px;
@@ -1535,10 +1557,22 @@ section.mission .container .mission__content--featured .title {
   line-height: 32px;
   margin-bottom: 19px;
 }
+@media screen and (max-width: 1024px) {
+  section.mission .container .mission__content--featured .title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
 section.mission .container .mission__content--featured .featured-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 60px;
+  row-gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  section.mission .container .mission__content--featured .featured-container {
+    gap: 30px;
+  }
 }
 section.mission .container .mission__content--featured .featured-container img {
   width: auto;

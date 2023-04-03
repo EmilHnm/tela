@@ -7,8 +7,7 @@ section.mission {
         width: 90%;
         max-width: 1080px;
         margin: auto;
-        display: flex;
-        
+        display: flex;     
         .mission__quotes {
             display: flex;
             flex-direction: column;
@@ -32,6 +31,10 @@ section.mission {
                 font-size: 36px;
                 line-height: 48px;
                 color: $primary;
+                @media screen and (max-width: $screen-viewport) {
+                    font-size: 28px;
+                    line-height: 40px;
+                }
             }
             &--description {
                 font-style: normal;
@@ -47,12 +50,19 @@ section.mission {
             color: $white;
             padding: 90px;
             padding-right: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             &--title {
                 font-style: normal;
                 font-weight: 700;
                 font-size: 40px;
                 line-height: 102%;
                 margin-bottom: 15px;
+                @media screen and (max-width: $screen-viewport) {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
             }
             &--text {
                 font-style: normal;
@@ -60,6 +70,11 @@ section.mission {
                 font-size: 16px;
                 line-height: 21px;
                 margin-bottom: 53px;
+                @media screen and (max-width: $screen-viewport) {
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 600;
+                }
                 p {
                     margin-bottom: 16px;
                 }
@@ -71,11 +86,19 @@ section.mission {
                     font-size: 24px;
                     line-height: 32px;
                     margin-bottom: 19px;
+                    @media screen and (max-width: $screen-viewport) {
+                        font-size: 20px;
+                        line-height: 22px;
+                    }
                 }
                 .featured-container {
                     display: flex;
                     flex-wrap: wrap;
-                    gap: 20px;
+                    gap: 60px;
+                    row-gap: 30px;
+                    @media screen and (max-width: $screen-viewport) {
+                        gap: 30px;
+                    }
                     img {
                         width: auto;
                         height: auto;
