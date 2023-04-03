@@ -757,6 +757,7 @@ section.features .container .content #features_desciption {
   color: #4479FF;
   display: none;
   margin-bottom: 24px;
+  padding: 24px;
 }
 @media screen and (max-width: 768px) {
   section.features .container .content #features_desciption {
@@ -1227,6 +1228,11 @@ section.cta .container .cta__title h2 {
 @media screen and (max-width: 768px) {
   section.cta .container .cta__title h2 {
     font-size: 36px;
+  }
+}
+@media screen and (max-width: 490px) {
+  section.cta .container .cta__title h2 {
+    font-size: 24px;
   }
 }
 

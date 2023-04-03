@@ -32,6 +32,9 @@ section.cta {
             @media screen and (max-width: $tablet-viewport) {
                 font-size: 36px;
             }
+            @media screen and (max-width: $mobile-viewport) {
+                font-size: 24px;
+            }
         }
 
     }
