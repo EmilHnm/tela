@@ -804,6 +804,9 @@ section.coverage .coverage__title {
   line-height: 101.99%;
   color: #4479FF;
 }
+section.coverage .coverage__title br {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   section.coverage .coverage__title br {
     display: block;
@@ -852,6 +855,12 @@ section.coverage .map-wrapper #country-popup {
   will-change: translate;
   box-sizing: border-box;
 }
+@media screen and (max-width: 490px) {
+  section.coverage .map-wrapper #country-popup {
+    max-width: 100%;
+    overflow: hidden;
+  }
+}
 section.coverage .map-wrapper #country-popup strong {
   font-weight: bold;
   font-size: clamp(14px, 1vw, 18px);
@@ -860,6 +869,14 @@ section.coverage .map-wrapper #country-popup ul {
   display: flex;
   margin-top: clamp(5px, 1vw, 13px);
   transition: all 0.3s linear;
+}
+@media screen and (max-width: 490px) {
+  section.coverage .map-wrapper #country-popup ul {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
 }
 section.coverage .map-wrapper #country-popup ul li {
   padding: 0 clamp(12px, 1vw, 15px);
@@ -1139,6 +1156,7 @@ section.trusted-by .container .content__left .trusted-by__item-content-author .c
 }
 section.trusted-by .container .content__left .trusted-by__item-content-author .author__infor {
   display: flex;
+  align-items: center;
 }
 section.trusted-by .container .content__left .trusted-by__item-content-author .author__infor-name {
   font-size: 16px;

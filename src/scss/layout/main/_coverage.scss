@@ -12,8 +12,9 @@ section.coverage {
         font-size: 40px;
         line-height: 101.99%;
         color: $primary;
-        @media screen and (max-width: 768px) {
-            & br{
+        & br {
+            display: none;
+            @media screen and (max-width: $tablet-viewport) {
                 display: block;
             }
         }
@@ -60,6 +61,10 @@ section.coverage {
             position: absolute;
             will-change: translate;
             box-sizing: border-box;
+            @media screen and (max-width: $mobile-viewport) {
+                max-width: 100%;
+                overflow: hidden;
+            }
             & strong {
                 font-weight: bold;
                 font-size: clamp(14px, 1vw, 18px)
@@ -67,7 +72,13 @@ section.coverage {
             & ul {
                 display: flex;
                 margin-top: clamp(5px, 1vw, 13px);
-                transition: all 0.3s linear
+                transition: all 0.3s linear;
+                @media screen and (max-width: $mobile-viewport) {
+                    max-width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 5px;
+                }
             }
             & ul li {
                 padding: 0 clamp(12px, 1vw, 15px);

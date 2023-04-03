@@ -64,6 +64,7 @@ section.trusted-by {
                         }
                         .author__infor {
                             display: flex;
+                            align-items: center;
                             &-name {
                                 font-size: 16px;
                                 font-style: italic;
@@ -94,13 +95,6 @@ section.trusted-by {
                 position: relative;
                 z-index: 1;
             }
-            // .trusted-by__item.item2{
-
-            // }
-            // .trusted-by__item.item3{
-            //     position: relative;
-            //     left:100%;
-            // }
             .trusted-by__title {
                 color: $primary;
                 font-family: "Red Hat Display";
@@ -182,17 +176,6 @@ section.trusted-by {
                     }
                 }
             }
-            // .trusted-by__item.item1{
-            //     position: relative;
-            //     left:100%;
-            // }
-            // .trusted-by__item.item2{
-
-            // }
-            // .trusted-by__item.item3{
-            //     position: relative;
-            //     left:100%;
-            // }
         }
     }
 }

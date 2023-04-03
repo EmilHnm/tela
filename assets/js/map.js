@@ -41,7 +41,13 @@ const movePopupWithMouse = ({ clientX, clientY }) => {
         const { x, y } = mapElement.getBoundingClientRect(); //Scroll height support
         const mouseX = clientX - x - width * 0.5;
         const mouseY = clientY - y - height;
-        const translate = `translate3d(${mouseX + styledShiftAmount}px, ${mouseY - 16}px, 0)`;
+        let translate = "";
+        if (window.innerWidth >= 768) {
+            translate = `translate3d(${mouseX + styledShiftAmount}px, ${mouseY - 16}px, 0)`;
+        }
+        else {
+            translate = `translateY(-100%)`;
+        }
         popupCountryElement.style.transform = translate;
     }
 };
