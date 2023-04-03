@@ -3,6 +3,7 @@ section.hero {
     margin: 0 auto;
     @media screen and (max-width: $tablet-viewport) {
         padding: 4rem 0;
+        height: max-content;
     }
     height: 100vh;
     & .container {

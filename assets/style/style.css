@@ -394,6 +394,7 @@ section.hero {
 @media screen and (max-width: 768px) {
   section.hero {
     padding: 4rem 0;
+    height: max-content;
   }
 }
 section.hero .container {
