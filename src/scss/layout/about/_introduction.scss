@@ -19,6 +19,7 @@ section.introduction {
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         background-color: $white;
         border: 1px solid $primary;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.05);
@@ -85,9 +86,12 @@ section.introduction {
         }
         .introduction__image {
             width: 45%;
+            max-width: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 53px;
+            overflow: hidden;
             @media screen and (max-width: $tablet-viewport) {
                 width: calc(100% - 20px);
             }
