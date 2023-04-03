@@ -12,6 +12,12 @@ section.coverage {
         font-size: 40px;
         line-height: 101.99%;
         color: $primary;
+        @media screen and (max-width: 768px) {
+            & br{
+                display: block;
+            }
+        }
+        
     }
     .coverage__subtitle {
         font-family: 'Red Hat Display';
@@ -167,6 +173,9 @@ section.coverage {
         }
             
         &-item {
+            @media screen  and (max-width: 768px) {
+                width: 28%;
+            }
             &-img {
                 width: 80px;
                 height: 48px;

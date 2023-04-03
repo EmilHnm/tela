@@ -774,6 +774,7 @@ section.features .container .tabs {
 @media screen and (max-width: 490px) {
   section.features .container .tabs {
     width: 100%;
+    box-shadow: unset;
   }
 }
 section.features .container .tabs video {
@@ -802,6 +803,11 @@ section.coverage .coverage__title {
   font-size: 40px;
   line-height: 101.99%;
   color: #4479FF;
+}
+@media screen and (max-width: 768px) {
+  section.coverage .coverage__title br {
+    display: block;
+  }
 }
 section.coverage .coverage__subtitle {
   font-family: "Red Hat Display";
@@ -963,6 +969,11 @@ section.coverage .pay__method {
 @media screen and (max-width: 768px) {
   section.coverage .pay__method {
     gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.coverage .pay__method-item {
+    width: 28%;
   }
 }
 section.coverage .pay__method-item-img {
@@ -1199,6 +1210,11 @@ section.trusted-by .container .content__right .trusted-by__item-content-sub {
   color: #323232;
   text-align: justify;
 }
+@media screen and (max-width: 768px) {
+  section.trusted-by .container .content__right .trusted-by__item-content-sub {
+    text-align: left;
+  }
+}
 section.trusted-by .container .content__right .trusted-by__item-content-author {
   display: flex;
   align-items: center;
@@ -1356,6 +1372,19 @@ section.introduction .container .introduction__content {
   flex-direction: column;
   justify-items: center;
 }
+section.introduction .container .introduction__content .introduction__title {
+  position: absolute;
+  width: 209px;
+  height: 41px;
+  left: 271px;
+  top: 649px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 101.99%;
+}
+
 .btn {
   display: flex;
   flex-direction: column;

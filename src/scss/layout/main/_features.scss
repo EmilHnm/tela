@@ -141,7 +141,11 @@ section.features {
             overflow: hidden;
             @media screen and (max-width: $mobile-viewport) {
             width: 100%;
+            box-shadow: unset;
             }
+
+           
+
             video {
                 width: 390px;
               
