@@ -1,7 +1,9 @@
 @import "./utils/variables";
 @import "./base/reset";
 @import "./base/fontfamily";
+@import "./base/icon";
 @import "./layout/header";
+@import "./layout/footer";
 @import "./layout/main";
 @import "./layout/main/hero";
 @import "./layout/main/introduce";
@@ -10,5 +12,6 @@
 @import "./layout/main/policy";
 @import "./layout/main/trusted_by";
 @import "./layout/main/cta";
-@import "./layout/footer";
+@import "./layout/about/headline";
+@import "./layout/about/introduction";
 @import "./components/button";

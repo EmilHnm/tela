@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.png">
+    <title>About Tela</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="logo">
+                <span>tela</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#document">Documentation</a></li>
+                    <li><a href="#coverage">Coverage</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <button id="menu-open">
+                    <img src="./assets/images/icon/burger.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="responsive-header" id="responsive-header">
+            <div class="responsive-header__top">
+                <div class="responsive-header__top--logo">
+                    <img src="assets/images/logo.png" alt="logo">
+                    <span>tela</span>
+                </div>
+                <div class="responsive-header__top--toggle">
+                    <button id="menu-close">
+                        <img src="./assets/images/icon/cross.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="responsive-header__menu" >
+                <ul>
+                    <li><a onclick="toggleMenu()" href="./index.html">Home</a></li>
+                    <li><a onclick="toggleMenu()" href="#">About</a></li>
+                    <li><a onclick="toggleMenu()" href="#document">Documentation</a></li>
+                    <li><a onclick="toggleMenu()" href="#coverage">Coverage</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="headline">
+            <div class="container">
+                <div class="headline__logo">
+                    <img src="./assets/images/logo-390x427.png" alt="">
+                </div>
+                <h2 class="headline__title">Bridging traditional finance and defi.</h2>
+                <p class="headline__subtitle">Tela empowers globally renowned brands and leading blockchain ventures in driving the widespread adoption of their services.</p>
+            </div>
+        </section>
+        <section class="introduction">
+            <div class="container">
+                <div class="introduction__content">
+                    <h2 class="introduction__title">We are Tela</h2>
+                    <p class="introduction__text">Tela's non-custodial, on-and-off ramp infrastructure speeds up adoption and instills confidence in its partners.</p>
+                    <p class="introduction__text">Our team prioritizes skill over seniority, ability over age, and knowledge over noise. As a company, we strive for continuous improvement, solve genuine problems, and embrace innovation as pioneers.</p>
+                    <div class="introduction__findout">
+                        <a href="">
+                            <span>Find out more</span>
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="introduction__image">
+                    <img src="./assets/images/about-1.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="achievement"></section>
+        <section class="mission"></section>
+    </main>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+</html>
