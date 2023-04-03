@@ -1,0 +1,59 @@
+.trusted-by__item {
+    background-color: #e4ecff;
+    padding: 25px 55px;
+    font-size: 30px;
+    text-align: center;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+    margin-bottom: 20px;
+    min-height: 100px;
+    // @media screen and (max-width: $tablet-viewport) {
+    //   width: 100%;
+    // }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        &-sub {
+            font-family: "Red Hat Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 10px;
+
+            color: #323232;
+            text-align: justify;
+        }
+        &-author {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .coin-img {
+                object-fit: contain;
+                height: 64px;
+                width: 64px;
+            }
+            .author__infor {
+                display: flex;
+                align-items: center;
+                &-name {
+                    font-size: 16px;
+                    font-style: italic;
+                    color: $primary;
+                    text-align: left;
+                }
+                &-position {
+                    color: #979797;
+                    font-size: 14px;
+                }
+                .author__img {
+                    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                    object-fit: contain;
+                    height: 64px;
+                    width: 64px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

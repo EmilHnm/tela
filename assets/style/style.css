@@ -471,6 +471,7 @@ section.hero .container .box iframe {
   display: block;
   max-width: 470px;
   margin: 0 auto;
+  min-height: 700px;
 }
 
 section.introduce {
@@ -1121,60 +1122,6 @@ section.trusted-by .container .content__left {
     transform: unset;
   }
 }
-section.trusted-by .container .content__left .trusted-by__item {
-  background-color: #e4ecff;
-  padding: 25px 55px;
-  font-size: 30px;
-  text-align: center;
-  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
-  margin-bottom: 20px;
-  min-height: 100px;
-}
-section.trusted-by .container .content__left .trusted-by__item-content {
-  display: flex;
-  flex-direction: column;
-}
-section.trusted-by .container .content__left .trusted-by__item-content-sub {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  margin-bottom: 10px;
-  color: #323232;
-  text-align: justify;
-}
-section.trusted-by .container .content__left .trusted-by__item-content-author {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-section.trusted-by .container .content__left .trusted-by__item-content-author .coin-img {
-  object-fit: contain;
-  height: 64px;
-  width: 64px;
-}
-section.trusted-by .container .content__left .trusted-by__item-content-author .author__infor {
-  display: flex;
-  align-items: center;
-}
-section.trusted-by .container .content__left .trusted-by__item-content-author .author__infor-name {
-  font-size: 16px;
-  font-style: italic;
-  color: #4479FF;
-  text-align: left;
-}
-section.trusted-by .container .content__left .trusted-by__item-content-author .author__infor-position {
-  color: #979797;
-  font-size: 14px;
-}
-section.trusted-by .container .content__left .trusted-by__item-content-author .author__infor .author__img {
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  object-fit: contain;
-  height: 64px;
-  width: 64px;
-  margin-right: 10px;
-}
 section.trusted-by .container .content__left .trusted-by__item.item1 {
   background-color: unset;
   padding: unset;
@@ -1205,63 +1152,6 @@ section.trusted-by .container .content__right {
   section.trusted-by .container .content__right {
     width: 100%;
   }
-}
-section.trusted-by .container .content__right .trusted-by__item {
-  background-color: #e4ecff;
-  padding: 25px 55px;
-  font-size: 30px;
-  text-align: center;
-  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
-  margin-bottom: 30px;
-}
-section.trusted-by .container .content__right .trusted-by__item-content {
-  display: flex;
-  flex-direction: column;
-}
-section.trusted-by .container .content__right .trusted-by__item-content-sub {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  margin-bottom: 10px;
-  color: #323232;
-  text-align: justify;
-}
-@media screen and (max-width: 768px) {
-  section.trusted-by .container .content__right .trusted-by__item-content-sub {
-    text-align: left;
-  }
-}
-section.trusted-by .container .content__right .trusted-by__item-content-author {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-section.trusted-by .container .content__right .trusted-by__item-content-author .coin-img {
-  object-fit: contain;
-  height: 64px;
-  width: 64px;
-}
-section.trusted-by .container .content__right .trusted-by__item-content-author .author__infor {
-  display: flex;
-}
-section.trusted-by .container .content__right .trusted-by__item-content-author .author__infor-name {
-  font-size: 16px;
-  font-style: italic;
-  color: #4479FF;
-  text-align: left;
-}
-section.trusted-by .container .content__right .trusted-by__item-content-author .author__infor-position {
-  color: #979797;
-  font-size: 14px;
-}
-section.trusted-by .container .content__right .trusted-by__item-content-author .author__infor .author__img {
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  object-fit: contain;
-  height: 64px;
-  width: 64px;
-  margin-right: 10px;
 }
 
 section.cta {
@@ -1418,6 +1308,61 @@ section.introduction .container .introduction__content .introduction__title {
   width: max-content;
   cursor: pointer;
   user-select: none;
+}
+
+.trusted-by__item {
+  background-color: #e4ecff;
+  padding: 25px 55px;
+  font-size: 30px;
+  text-align: center;
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  margin-bottom: 20px;
+  min-height: 100px;
+}
+.trusted-by__item-content {
+  display: flex;
+  flex-direction: column;
+}
+.trusted-by__item-content-sub {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  color: #323232;
+  text-align: justify;
+}
+.trusted-by__item-content-author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trusted-by__item-content-author .coin-img {
+  object-fit: contain;
+  height: 64px;
+  width: 64px;
+}
+.trusted-by__item-content-author .author__infor {
+  display: flex;
+  align-items: center;
+}
+.trusted-by__item-content-author .author__infor-name {
+  font-size: 16px;
+  font-style: italic;
+  color: #4479FF;
+  text-align: left;
+}
+.trusted-by__item-content-author .author__infor-position {
+  color: #979797;
+  font-size: 14px;
+}
+.trusted-by__item-content-author .author__infor .author__img {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  object-fit: contain;
+  height: 64px;
+  width: 64px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
