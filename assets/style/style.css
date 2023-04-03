@@ -1479,6 +1479,8 @@ section.mission .container .mission__quotes {
   width: 30%;
   flex: 1 0 30%;
   background: #fff;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 section.mission .container .mission__quotes--image {
   max-width: 200px;
@@ -1503,10 +1505,45 @@ section.mission .container .mission__quotes--description {
   color: #212529;
 }
 section.mission .container .mission__content {
+  border-radius: 0 30px 30px 0;
   background: #4479FF;
   color: #fff;
   padding: 90px;
   padding-right: 40px;
+}
+section.mission .container .mission__content--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 102%;
+  margin-bottom: 15px;
+}
+section.mission .container .mission__content--text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 53px;
+}
+section.mission .container .mission__content--text p {
+  margin-bottom: 16px;
+}
+section.mission .container .mission__content--featured .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 19px;
+}
+section.mission .container .mission__content--featured .featured-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+section.mission .container .mission__content--featured .featured-container img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .btn {

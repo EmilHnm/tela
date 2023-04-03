@@ -16,6 +16,8 @@ section.mission {
             width: 30%;
             flex: 1 0 30%;
             background: $white;
+            padding-top: 90px;
+            padding-bottom: 90px;
             &--image {
                 max-width: 200px;
                 img {
@@ -40,10 +42,47 @@ section.mission {
             }
         }
         .mission__content {
+            border-radius: 0 30px 30px 0;
             background: $primary;
             color: $white;
             padding: 90px;
             padding-right: 40px;
+            &--title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 102%;
+                margin-bottom: 15px;
+            }
+            &--text {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 21px;
+                margin-bottom: 53px;
+                p {
+                    margin-bottom: 16px;
+                }
+            }
+            &--featured {
+                .title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-bottom: 19px;
+                }
+                .featured-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    img {
+                        width: auto;
+                        height: auto;
+                        object-fit: contain;
+                    }
+                }
+            }
         }
     }
 }
