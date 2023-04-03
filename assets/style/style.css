@@ -380,6 +380,9 @@ header .responsive-header__menu ul a:hover {
   text-align: center;
 }
 
+main {
+  overflow: hidden;
+}
 @media screen and (max-width: 490px) {
   main {
     margin-top: 80px;
@@ -1455,6 +1458,55 @@ section.introduction .container .introduction__image img {
   line-height: 21px;
   text-align: center;
   color: #6c757d;
+}
+
+section.mission {
+  width: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  margin-bottom: 70px;
+  position: relative;
+}
+section.mission .container {
+  width: 90%;
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+}
+section.mission .container .mission__quotes {
+  display: flex;
+  flex-direction: column;
+  padding-right: 62px;
+  width: 30%;
+  flex: 1 0 30%;
+  background: #fff;
+}
+section.mission .container .mission__quotes--image {
+  max-width: 200px;
+}
+section.mission .container .mission__quotes--image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+section.mission .container .mission__quotes--text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #4479FF;
+}
+section.mission .container .mission__quotes--description {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #212529;
+}
+section.mission .container .mission__content {
+  background: #4479FF;
+  color: #fff;
+  padding: 90px;
+  padding-right: 40px;
 }
 
 .btn {
