@@ -380,6 +380,9 @@ header .responsive-header__menu ul a:hover {
   text-align: center;
 }
 
+main {
+  overflow: hidden;
+}
 @media screen and (max-width: 490px) {
   main {
     margin-top: 80px;
@@ -1422,6 +1425,12 @@ section.introduction .container .introduction__image img {
   margin-bottom: 70px;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .achievement {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
 .achievement::after {
   content: "";
   position: absolute;
@@ -1438,6 +1447,11 @@ section.introduction .container .introduction__image img {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .achievement__item {
+    flex: 1 0 33%;
+  }
+}
 .achievement__item--content {
   font-family: "Red Hat Display";
   font-style: normal;
@@ -1447,6 +1461,12 @@ section.introduction .container .introduction__image img {
   text-align: center;
   color: #4479FF;
 }
+@media screen and (max-width: 768px) {
+  .achievement__item--content {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
 .achievement__item--title {
   font-family: "Red Hat Display";
   font-style: italic;
@@ -1455,6 +1475,12 @@ section.introduction .container .introduction__image img {
   line-height: 21px;
   text-align: center;
   color: #6c757d;
+}
+@media screen and (max-width: 768px) {
+  .achievement__item--title {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .btn {

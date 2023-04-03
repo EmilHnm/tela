@@ -1,4 +1,5 @@
 main {
+    overflow: hidden;
     @media screen and (max-width: $mobile-viewport) {
         margin-top: 80px;
     }
