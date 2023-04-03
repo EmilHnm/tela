@@ -2,6 +2,17 @@ section.introduction {
     width: 100%;
     font-family: 'Red Hat Display', sans-serif;
     margin-bottom: 70px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -40%;
+        left: -50%;
+        width: 100%;
+        height: 100%;
+        background: url('/assets/images/feature-bg.png') no-repeat center;
+        z-index: -1;
+    }
     .container {
         width: 90%;
         max-width: 1080px;
@@ -13,22 +24,76 @@ section.introduction {
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.05);
         border-radius: 30px;
         padding: 70px 0;
+        @media screen and (max-width: $tablet-viewport) {
+            flex-direction: column;
+            padding: 70px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
         .introduction__content {
             width: 45%;
             display: flex;
             flex-direction: column;
             justify-items: center;
+            @media screen and (max-width: $tablet-viewport) {
+                width: calc(100% - 40px);
+            }
             .introduction__title {
-                position: absolute;
-                width: 209px;
-                height: 41px;
-                left: 271px;
-                top: 649px;
-                font-family: 'Red Hat Display';
                 font-style: normal;
                 font-weight: 700;
                 font-size: 40px;
                 line-height: 101.99%;
+                color: $primary;
+                margin: 0;
+            }
+            .introduction__text {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 21px;
+                margin: 10px 0;
+            }
+            .introduction__more {
+                background: $white;
+                border: 1px solid $gray-900;
+                border-radius: 2px;
+                width: max-content;
+                padding: 10px 20px;
+                cursor: pointer;
+                margin-top: 48px;
+                @media screen and (max-width: $tablet-viewport) {
+                    margin-top: 24px;
+                }
+                span:first-child {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 20px;
+                    text-align: right;
+                    color: $gray-900;
+                }
+                span:last-child {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: right;
+                    color: $gray-900;
+                }
+            }
+        }
+        .introduction__image {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width: $tablet-viewport) {
+                width: calc(100% - 20px);
+            }
+            img {
+                width: 100%;
+                object-fit: contain;
             }
         }
     }
