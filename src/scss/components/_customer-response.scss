@@ -6,9 +6,9 @@
     clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
     margin-bottom: 20px;
     min-height: 100px;
-    // @media screen and (max-width: $tablet-viewport) {
-    //   width: 100%;
-    // }
+    @media screen and (max-width: $tablet-viewport) {
+        min-width:calc(100vw - 110px) ;
+    }
     &-content {
         display: flex;
         flex-direction: column;
@@ -27,7 +27,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-
             .coin-img {
                 object-fit: contain;
                 height: 64px;

@@ -1106,6 +1106,27 @@ section.trusted-by .container {
     flex-direction: column;
   }
 }
+section.trusted-by .container .trusted-by__title {
+  color: #4479FF;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 101.99%;
+}
+@media screen and (max-width: 1024px) {
+  section.trusted-by .container .trusted-by__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.trusted-by .container .trusted-by__title {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
 section.trusted-by .container .content__left {
   width: 40%;
   background-color: #fff;
@@ -1119,8 +1140,7 @@ section.trusted-by .container .content__left {
 }
 @media screen and (max-width: 768px) {
   section.trusted-by .container .content__left {
-    width: 100%;
-    transform: unset;
+    display: none;
   }
 }
 section.trusted-by .container .content__left .trusted-by__item.item1 {
@@ -1132,27 +1152,37 @@ section.trusted-by .container .content__left .trusted-by__item.item1 {
   position: relative;
   z-index: 1;
 }
-section.trusted-by .container .content__left .trusted-by__title {
-  color: #4479FF;
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 101.99%;
-}
-@media screen and (max-width: 1024px) {
-  section.trusted-by .container .content__left .trusted-by__title {
-    font-size: 32px;
-  }
-}
 section.trusted-by .container .content__right {
   width: 40%;
   background-color: #fff;
 }
 @media screen and (max-width: 768px) {
   section.trusted-by .container .content__right {
-    width: 100%;
+    display: none;
   }
+}
+section.trusted-by .container .content__tablet {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  section.trusted-by .container .content__tablet {
+    display: block;
+  }
+}
+section.trusted-by .container .content__tablet .carousel {
+  max-width: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+section.trusted-by .container .content__tablet .carousel::-webkit-scrollbar {
+  display: none;
+}
+section.trusted-by .container .content__tablet .carousel-content {
+  display: flex;
 }
 
 section.cta {
@@ -1319,6 +1349,11 @@ section.introduction .container .introduction__content .introduction__title {
   clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
   margin-bottom: 20px;
   min-height: 100px;
+}
+@media screen and (max-width: 768px) {
+  .trusted-by__item {
+    min-width: calc(100vw - 110px);
+  }
 }
 .trusted-by__item-content {
   display: flex;
