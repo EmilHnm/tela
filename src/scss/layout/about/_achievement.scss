@@ -7,6 +7,10 @@
     margin: auto;
     margin-bottom: 70px;
     position: relative;
+    @media screen and (max-width: $tablet-viewport) {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
     &::after {
         content: '';
         position: absolute;
@@ -22,6 +26,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: $tablet-viewport) {
+            flex: 1 0 33%;
+        }
         &--content {
             font-family: 'Red Hat Display';
             font-style: normal;
@@ -30,6 +37,10 @@
             line-height: 64px;
             text-align: center;
             color: $primary;
+            @media screen and (max-width: $tablet-viewport) {
+                font-size: 32px;
+                line-height: 48px;
+            }
         }
         &--title {
             font-family: 'Red Hat Display';
@@ -39,7 +50,10 @@
             line-height: 21px;
             text-align: center;
             color: $gray-600;
+            @media screen and (max-width: $tablet-viewport) {
+                font-size: 14px;
+                line-height: 18px;
+            }
         }
     }
-
 }
