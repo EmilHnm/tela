@@ -1472,15 +1472,37 @@ section.mission .container {
   margin: auto;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  section.mission .container {
+    flex-wrap: wrap;
+  }
+}
 section.mission .container .mission__quotes {
   display: flex;
   flex-direction: column;
-  padding-right: 62px;
   width: 30%;
   flex: 1 0 30%;
   background: #fff;
   padding-top: 90px;
   padding-bottom: 90px;
+  padding-right: 62px;
+}
+@media screen and (max-width: 768px) {
+  section.mission .container .mission__quotes {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 490px) {
+  section.mission .container .mission__quotes {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 section.mission .container .mission__quotes--image {
   max-width: 200px;
@@ -1490,7 +1512,7 @@ section.mission .container .mission__quotes--image img {
   height: auto;
   object-fit: contain;
 }
-section.mission .container .mission__quotes--text {
+section.mission .container .mission__quotes--title {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -1498,9 +1520,22 @@ section.mission .container .mission__quotes--text {
   color: #4479FF;
 }
 @media screen and (max-width: 1024px) {
-  section.mission .container .mission__quotes--text {
+  section.mission .container .mission__quotes--title {
     font-size: 28px;
     line-height: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.mission .container .mission__quotes--title {
+    width: calc(100% - 220px);
+  }
+}
+@media screen and (max-width: 490px) {
+  section.mission .container .mission__quotes--title {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 section.mission .container .mission__quotes--description {
@@ -1509,6 +1544,11 @@ section.mission .container .mission__quotes--description {
   font-size: 16px;
   line-height: 21px;
   color: #212529;
+}
+@media screen and (max-width: 768px) {
+  section.mission .container .mission__quotes--description {
+    width: 100%;
+  }
 }
 section.mission .container .mission__content {
   border-radius: 0 30px 30px 0;
@@ -1519,6 +1559,12 @@ section.mission .container .mission__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  section.mission .container .mission__content {
+    border-radius: 0 0 30px 30px;
+    padding: 30px;
+  }
 }
 section.mission .container .mission__content--title {
   font-style: normal;
@@ -1533,6 +1579,12 @@ section.mission .container .mission__content--title {
     line-height: 40px;
   }
 }
+@media screen and (max-width: 490px) {
+  section.mission .container .mission__content--title {
+    font-size: 24px;
+    line-height: 28spx;
+  }
+}
 section.mission .container .mission__content--text {
   font-style: normal;
   font-weight: 700;
@@ -1545,6 +1597,11 @@ section.mission .container .mission__content--text {
     font-size: 14px;
     line-height: 18px;
     font-weight: 600;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.mission .container .mission__content--text {
+    margin-bottom: 0px;
   }
 }
 section.mission .container .mission__content--text p {
