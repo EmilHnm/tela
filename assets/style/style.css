@@ -1683,6 +1683,7 @@ section.mission .container .mission__content--featured .featured-container img {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     backdrop-filter: blur(3px);
     text-shadow: 0 0 12px #fff;
     font-size: 36px;
