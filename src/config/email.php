@@ -1,0 +1,9 @@
+<?php
+$config['email']=[
+    'host'=>"smtp.gmail.com",
+    'username'=>'vn0202.nd@gmail.com',
+    'password'=>"efdruitiipgbjfah",
+    'SMTPSecure'=>"TLS",
+    'port'=>587,
+    'fullname'=>"Hello@Tela"
+];
