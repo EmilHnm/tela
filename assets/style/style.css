@@ -1425,6 +1425,12 @@ section.introduction .container .introduction__image img {
   margin-bottom: 70px;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .achievement {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
 .achievement::after {
   content: "";
   position: absolute;
@@ -1441,6 +1447,11 @@ section.introduction .container .introduction__image img {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .achievement__item {
+    flex: 1 0 33%;
+  }
+}
 .achievement__item--content {
   font-family: "Red Hat Display";
   font-style: normal;
@@ -1450,6 +1461,12 @@ section.introduction .container .introduction__image img {
   text-align: center;
   color: #4479FF;
 }
+@media screen and (max-width: 768px) {
+  .achievement__item--content {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
 .achievement__item--title {
   font-family: "Red Hat Display";
   font-style: italic;
@@ -1458,6 +1475,12 @@ section.introduction .container .introduction__image img {
   line-height: 21px;
   text-align: center;
   color: #6c757d;
+}
+@media screen and (max-width: 768px) {
+  .achievement__item--title {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 section.mission {
@@ -3210,7 +3233,7 @@ table > tr {
 
 @media print {
   .notion-light-theme code[class*=language-],
-  .notion-light-theme pre[class*=language-] {
+.notion-light-theme pre[class*=language-] {
     text-shadow: none;
   }
 }
@@ -3276,7 +3299,7 @@ table > tr {
 .notion-light-theme .style .token.string {
   color: #9a6e3a;
   /* This background color was intended by the author of this theme. */
-  background: hsla(0, 0%, 100%, 0.5);
+  background: hsla(0deg, 0%, 100%, 0.5);
 }
 
 .notion-light-theme .token.atrule,
@@ -3338,13 +3361,13 @@ table > tr {
 
 @media print {
   .notion-dark-theme code[class*=language-],
-  .notion-dark-theme pre[class*=language-] {
+.notion-dark-theme pre[class*=language-] {
     text-shadow: none;
   }
 }
 .notion-dark-theme pre[class*=language-],
 .notion-dark-theme :not(pre) > code[class*=language-] {
-  background: hsl(30, 20%, 25%);
+  background: hsl(30deg, 20%, 25%);
 }
 
 /* Code blocks */
@@ -3352,7 +3375,7 @@ table > tr {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
-  border: 0.3em solid hsl(30, 20%, 40%);
+  border: 0.3em solid hsl(30deg, 20%, 40%);
   border-radius: 0.5em;
   box-shadow: 1px 1px 0.5em black inset;
 }
@@ -3361,7 +3384,7 @@ table > tr {
 .notion-dark-theme :not(pre) > code[class*=language-] {
   padding: 0.15em 0.2em 0.05em;
   border-radius: 0.3em;
-  border: 0.13em solid hsl(30, 20%, 40%);
+  border: 0.13em solid hsl(30deg, 20%, 40%);
   box-shadow: 1px 1px 0.3em -0.1em black inset;
   white-space: normal;
 }
@@ -3370,7 +3393,7 @@ table > tr {
 .notion-dark-theme .token.prolog,
 .notion-dark-theme .token.doctype,
 .notion-dark-theme .token.cdata {
-  color: hsl(30, 20%, 50%);
+  color: hsl(30deg, 20%, 50%);
 }
 
 .notion-dark-theme .token.punctuation {
@@ -3387,7 +3410,7 @@ table > tr {
 .notion-dark-theme .token.number,
 .notion-dark-theme .token.constant,
 .notion-dark-theme .token.symbol {
-  color: hsl(350, 40%, 70%);
+  color: hsl(350deg, 40%, 70%);
 }
 
 .notion-dark-theme .token.selector,
@@ -3397,7 +3420,7 @@ table > tr {
 .notion-dark-theme .token.builtin,
 .notion-dark-theme .token.inserted,
 .notion-dark-theme .token.inserted + .token.line {
-  color: hsl(75, 70%, 60%);
+  color: hsl(75deg, 70%, 60%);
 }
 
 .notion-dark-theme .token.operator,
@@ -3406,13 +3429,13 @@ table > tr {
 .notion-dark-theme .language-css .token.string,
 .notion-dark-theme .style .token.string,
 .notion-dark-theme .token.variable {
-  color: hsl(40, 90%, 60%);
+  color: hsl(40deg, 90%, 60%);
 }
 
 .notion-dark-theme .token.atrule,
 .notion-dark-theme .token.attr-value,
 .notion-dark-theme .token.keyword {
-  color: hsl(350, 40%, 70%);
+  color: hsl(350deg, 40%, 70%);
 }
 
 .notion-dark-theme .token.regex,
@@ -3534,6 +3557,195 @@ html {
 }
 .notion-table-content {
   padding: 0 !important;
+}
+
+body {
+  height: 100vh !important;
+}
+
+main {
+  margin: 100px 0px;
+  padding: 0 180px;
+}
+@media screen and (max-width: 768px) {
+  main {
+    padding: 0;
+  }
+}
+
+section.contact {
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+}
+section.contact .content {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  section.contact .content {
+    flex-direction: column;
+  }
+}
+section.contact .content .contact__tela {
+  width: 50%;
+  background: #4479FF;
+  padding: 45px 39px 56px 76px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  section.contact .content .contact__tela {
+    padding: 0 0 20px;
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+section.contact .content .contact__tela-heading {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  section.contact .content .contact__tela-heading {
+    font-size: 24px;
+  }
+}
+section.contact .content .contact__tela-subheading {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  section.contact .content .contact__tela-infor {
+    margin: auto;
+  }
+}
+section.contact .content .contact__tela-infor-item {
+  display: flex;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+section.contact .content .contact__tela-infor-item img {
+  margin-right: 10px;
+}
+section.contact .content .contact__tela-infor-item:nth-child(1) {
+  margin-top: 20px;
+}
+section.contact .content .contact__tela-infor-item:nth-child(2) {
+  margin: 30px 0;
+}
+section.contact .content .contact__form {
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-right: 12px;
+  padding-bottom: 40px;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  section.contact .content .contact__form {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+section.contact .content .contact__form-heading {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #4479FF;
+}
+@media screen and (max-width: 768px) {
+  section.contact .content .contact__form-heading {
+    font-size: 24px;
+  }
+}
+section.contact .content .contact__form-subheading {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #4479FF;
+}
+section.contact .content .contact__form form .form__group {
+  display: flex;
+  width: 100%;
+  margin-top: 47px;
+  margin-bottom: 56px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  section.contact .content .contact__form form .form__group {
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: 12px;
+  }
+}
+section.contact .content .contact__form form .form__group input {
+  padding: 8px;
+  display: inline-block;
+  border: none;
+  width: 48%;
+  border-bottom: 1px solid #ccc;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+@media screen and (max-width: 768px) {
+  section.contact .content .contact__form form .form__group input {
+    width: 100%;
+  }
+}
+section.contact .content .contact__form form .form__user-content {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  width: 100%;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #979797;
+}
+section.contact .content .contact__form form textarea::placeholder {
+  color: #979797;
+  opacity: 1;
+}
+section.contact .content .contact__form form .btn-contact {
+  background: #4479FF;
+  outline: none;
+  border: none;
+  padding: 10px 56px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  color: #fff;
+  margin-top: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .btn {

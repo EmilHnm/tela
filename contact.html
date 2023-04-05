@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>Tela</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.png">
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="logo">
+      <span>tela</span>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#document">Documentation</a></li>
+        <li><a href="#coverage">Coverage</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <button id="menu-open">
+        <img src="./assets/images/icon/burger.png" alt="">
+      </button>
+    </div>
+  </div>
+  <div class="responsive-header" id="responsive-header">
+    <div class="responsive-header__top">
+      <div class="responsive-header__top--logo">
+        <img src="assets/images/logo.png" alt="logo">
+        <span>tela</span>
+      </div>
+      <div class="responsive-header__top--toggle">
+        <button id="menu-close">
+          <img src="./assets/images/icon/cross.png" alt="">
+        </button>
+      </div>
+    </div>
+    <div class="responsive-header__menu">
+      <ul>
+        <li><a onclick="toggleMenu()" href="./index.html">Home</a></li>
+        <li><a onclick="toggleMenu()" href="#">About</a></li>
+        <li><a onclick="toggleMenu()" href="#document">Documentation</a></li>
+        <li><a onclick="toggleMenu()" href="#coverage">Coverage</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="contact">
+    <div class="container">
+      <div class="content">
+        <div class="contact__tela">
+          <h2 class="contact__tela-heading">
+            We’re here
+          </h2>
+          <p class="contact__tela-subheading">Our door is always open for a good cup of coffee.</p>
+          <ul class="contact__tela-infor">
+            <li class="contact__tela-infor-item">
+              <img src="./assets/images/location_icon.png" alt="" style="width: 17px; height: 23px">
+              <p>68 Circular Road # <br>02-01 Singapore 049422</p>
+            </li>
+            <li class="contact__tela-infor-item">
+              <img src="./assets/images/phone.png" alt="" style="width: 17px; height: 23px">
+              <p>+65 84187277</p>
+            </li>
+            <li class="contact__tela-infor-item">
+              <img src="./assets/images/mail.png" alt="" style="width: 23px; height:16px">
+              <p>hello@tela.io</p>
+            </li>
+          </ul>
+
+        </div>
+        <div class="contact__form">
+             <h2 class="contact__form-heading">Let's talk</h2>
+          <p class="contact__form-subheading">Share your excitement with us.</p>
+          <form action="">
+            <div class="form__group">
+              <input type="text" placeholder="Name" name="name">
+              <input type="text" name="email" placeholder="Email address">
+            </div>
+            <textarea placeholder="what's on your mind?" class="form__user-content"  cols="50" ></textarea>
+
+            <button class=" btn-contact"> Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__brand">
+      <img class="footer__brand-logo" src="./assets/images/logo-white.png" alt="">
+      <span class="footer__brand-name">tela</span>
+    </div>
+    <div class="footer__contact">
+      <span>hello@te-la.io</span>
+    </div>
+    <div class="footer__nav">
+      <a href="#" class="footer__nav--item">Home</a>
+      <a href="#" class="footer__nav--item">About</a>
+      <a href="#document" class="footer__nav--item">Documentation</a>
+      <a href="#covrage" class="footer__nav--item">Coverage</a>
+    </div>
+  </div>
+  <div class="footer__legal">
+    <p>
+      Tela Technologies Pte. Ltd. is a Singapore registered company with registration number 202309150E. <br>
+      Registered office: 68 Circular Road #02-01 Singapore 049422
+    </p>
+  </div>
+</footer>
+
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/mapData.js"></script>
+<script src="./assets/js/map.js"></script>
+
+</body>
+
+</html>

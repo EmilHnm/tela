@@ -1,0 +1,202 @@
+ body{
+   height: 100vh!important;
+
+ }
+
+ main{
+   margin: 100px 0px;
+   padding: 0 180px;
+   @media screen and (max-width: $tablet-viewport) {
+     padding:0;
+
+   }
+
+ }
+
+section.contact{
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+
+  & .content {
+    display: flex;
+    @media screen and (max-width: $tablet-viewport) {
+      flex-direction: column;
+    }
+
+    .contact__tela {
+      width: 50%;
+      background: $primary;
+      padding: 45px 39px 56px 76px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: $tablet-viewport) {
+        padding:0 0 20px;
+        width: 100%;
+        text-align: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+
+
+      }
+
+      &-heading {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: #FFFFFF;
+        @media screen and (max-width: $tablet-viewport) {
+          font-size: 24px;
+        }
+        }
+
+      &-subheading {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+      }
+
+      &-infor {
+        @media screen and (max-width: $tablet-viewport) {
+        margin: auto;
+        }
+        &-item {
+          display: flex;
+          font-family: 'Red Hat Display';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: #FFFFFF;
+
+          img {
+            margin-right: 10px;
+          }
+        }
+
+        &-item:nth-child(1) {
+          margin-top: 20px;
+        }
+
+        &-item:nth-child(2) {
+          margin: 30px 0;
+        }
+
+
+      }
+
+    }
+
+    .contact__form {
+      padding-left: 80px;
+      padding-top: 40px;
+      padding-right: 12px;
+      padding-bottom: 40px;
+
+      width: 50%;
+      @media screen and (max-width: $tablet-viewport) {
+        padding:0;
+        width: 100%;
+        text-align: center;
+
+      }
+      &-heading {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: $primary;
+        @media screen and (max-width: $tablet-viewport) {
+          font-size: 24px;
+        }
+        }
+
+      &-subheading {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: $primary;
+      }
+
+      form {
+        .form__group {
+          display: flex;
+          width: 100%;
+          margin-top: 47px;
+          margin-bottom: 56px;
+          justify-content: space-between;
+          @media screen and (max-width: $tablet-viewport) {
+            padding:0;
+            width: 100%;
+            flex-direction: column;
+            padding:12px;
+
+          }
+
+          input {
+            padding: 8px;
+            display: inline-block;
+            border: none;
+            width: 48%;
+            border-bottom: 1px solid #ccc;
+            font-family: 'Red Hat Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            @media screen and (max-width: $tablet-viewport) {
+              width: 100%;
+            }
+
+            }
+        }
+
+        .form__user-content {
+          border: none;
+          border-bottom: 1px solid #ccc;
+          display: inline-block;
+          width: 100%;
+          font-family: 'Red Hat Display';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          color: #979797;
+        }
+        textarea::placeholder{
+          color: #979797;
+          opacity: 1;
+        }
+        .btn-contact{
+          background: $primary;
+          outline: none;
+          border: none;
+          padding:10px 56px;
+          font-family: 'Red Hat Display';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 19px;
+          text-align: right;
+          color: $white;
+          margin-top:16px;
+          position: relative;
+          z-index: 1;
+        }
+
+      }
+
+    }
+  }}
