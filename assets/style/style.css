@@ -3233,7 +3233,7 @@ table > tr {
 
 @media print {
   .notion-light-theme code[class*=language-],
-.notion-light-theme pre[class*=language-] {
+  .notion-light-theme pre[class*=language-] {
     text-shadow: none;
   }
 }
@@ -3299,7 +3299,7 @@ table > tr {
 .notion-light-theme .style .token.string {
   color: #9a6e3a;
   /* This background color was intended by the author of this theme. */
-  background: hsla(0deg, 0%, 100%, 0.5);
+  background: hsla(0, 0%, 100%, 0.5);
 }
 
 .notion-light-theme .token.atrule,
@@ -3361,13 +3361,13 @@ table > tr {
 
 @media print {
   .notion-dark-theme code[class*=language-],
-.notion-dark-theme pre[class*=language-] {
+  .notion-dark-theme pre[class*=language-] {
     text-shadow: none;
   }
 }
 .notion-dark-theme pre[class*=language-],
 .notion-dark-theme :not(pre) > code[class*=language-] {
-  background: hsl(30deg, 20%, 25%);
+  background: hsl(30, 20%, 25%);
 }
 
 /* Code blocks */
@@ -3375,7 +3375,7 @@ table > tr {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
-  border: 0.3em solid hsl(30deg, 20%, 40%);
+  border: 0.3em solid hsl(30, 20%, 40%);
   border-radius: 0.5em;
   box-shadow: 1px 1px 0.5em black inset;
 }
@@ -3384,7 +3384,7 @@ table > tr {
 .notion-dark-theme :not(pre) > code[class*=language-] {
   padding: 0.15em 0.2em 0.05em;
   border-radius: 0.3em;
-  border: 0.13em solid hsl(30deg, 20%, 40%);
+  border: 0.13em solid hsl(30, 20%, 40%);
   box-shadow: 1px 1px 0.3em -0.1em black inset;
   white-space: normal;
 }
@@ -3393,7 +3393,7 @@ table > tr {
 .notion-dark-theme .token.prolog,
 .notion-dark-theme .token.doctype,
 .notion-dark-theme .token.cdata {
-  color: hsl(30deg, 20%, 50%);
+  color: hsl(30, 20%, 50%);
 }
 
 .notion-dark-theme .token.punctuation {
@@ -3410,7 +3410,7 @@ table > tr {
 .notion-dark-theme .token.number,
 .notion-dark-theme .token.constant,
 .notion-dark-theme .token.symbol {
-  color: hsl(350deg, 40%, 70%);
+  color: hsl(350, 40%, 70%);
 }
 
 .notion-dark-theme .token.selector,
@@ -3420,7 +3420,7 @@ table > tr {
 .notion-dark-theme .token.builtin,
 .notion-dark-theme .token.inserted,
 .notion-dark-theme .token.inserted + .token.line {
-  color: hsl(75deg, 70%, 60%);
+  color: hsl(75, 70%, 60%);
 }
 
 .notion-dark-theme .token.operator,
@@ -3429,13 +3429,13 @@ table > tr {
 .notion-dark-theme .language-css .token.string,
 .notion-dark-theme .style .token.string,
 .notion-dark-theme .token.variable {
-  color: hsl(40deg, 90%, 60%);
+  color: hsl(40, 90%, 60%);
 }
 
 .notion-dark-theme .token.atrule,
 .notion-dark-theme .token.attr-value,
 .notion-dark-theme .token.keyword {
-  color: hsl(350deg, 40%, 70%);
+  color: hsl(350, 40%, 70%);
 }
 
 .notion-dark-theme .token.regex,
@@ -3559,28 +3559,21 @@ html {
   padding: 0 !important;
 }
 
-main {
-  margin: 100px 0px;
-  padding: 0 180px;
-  min-height: calc(100vh - 174px);
-}
-@media screen and (max-width: 768px) {
-  main {
-    padding: 0;
-  }
-}
-
 section.contact {
-  margin: auto;
-  justify-content: center;
-  align-content: center;
+  margin-top: 100px;
+  min-height: calc(100vh - 275px);
+  width: 100%;
 }
 section.contact .content {
   display: flex;
+  width: 80%;
+  margin: auto;
 }
 @media screen and (max-width: 768px) {
   section.contact .content {
     flex-direction: column;
+    margin-bottom: 70px;
+    width: 100%;
   }
 }
 section.contact .content .contact__tela {
@@ -3606,7 +3599,7 @@ section.contact .content .contact__tela-heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
-  color: #FFFFFF;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   section.contact .content .contact__tela-heading {
@@ -3620,7 +3613,7 @@ section.contact .content .contact__tela-subheading {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   section.contact .content .contact__tela-subheading {
@@ -3639,7 +3632,7 @@ section.contact .content .contact__tela-infor-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #fff;
 }
 section.contact .content .contact__tela-infor-item img {
   margin-right: 10px;
@@ -3694,11 +3687,11 @@ section.contact .content .contact__form form .form__group {
 }
 @media screen and (max-width: 768px) {
   section.contact .content .contact__form form .form__group {
-    padding: 0;
     width: 100%;
     flex-direction: column;
     padding: 12px;
     gap: 20px;
+    margin-bottom: 20px;
   }
 }
 section.contact .content .contact__form form .form__group input {
@@ -3706,7 +3699,8 @@ section.contact .content .contact__form form .form__group input {
   display: inline-block;
   border: none;
   width: 48%;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ced4da;
+  color: #6c757d;
   font-family: "Red Hat Display", monospace;
   font-style: normal;
   font-weight: 700;
@@ -3720,7 +3714,7 @@ section.contact .content .contact__form form .form__group input {
 }
 section.contact .content .contact__form form .form__user-content {
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ced4da;
   display: inline-block;
   width: 100%;
   font-family: "Red Hat Display", monospace;
@@ -3728,15 +3722,15 @@ section.contact .content .contact__form form .form__user-content {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #979797;
+  color: #6c757d;
 }
 @media screen and (max-width: 768px) {
   section.contact .content .contact__form form .form__user-content {
-    padding: 12px;
+    margin: 12px;
   }
 }
 section.contact .content .contact__form form textarea::placeholder {
-  color: #979797;
+  color: #adb5bd;
   opacity: 1;
 }
 section.contact .content .contact__form form .btn-contact {

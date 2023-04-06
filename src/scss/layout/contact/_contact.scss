@@ -1,30 +1,17 @@
- body{
 
- }
-
- main{
-   margin: 100px 0px;
-   padding: 0 180px;
-   min-height: calc(100vh - 174px);
-
-   @media screen and (max-width: $tablet-viewport) {
-     padding:0;
-
-   }
-
- }
-
-section.contact{
-  margin: auto;
-  justify-content: center;
-  align-content: center;
-
+section.contact {
+  margin-top: 100px;
+  min-height: calc(100vh - 275px);
+  width: 100%;
   & .content {
     display: flex;
+    width: 80%;
+    margin: auto;
     @media screen and (max-width: $tablet-viewport) {
       flex-direction: column;
+      margin-bottom: 70px;
+      width: 100%;
     }
-
     .contact__tela {
       width: 50%;
       background: $primary;
@@ -33,55 +20,47 @@ section.contact{
       border-bottom-left-radius: 20px;
       display: flex;
       flex-direction: column;
-
       @media screen and (max-width: $tablet-viewport) {
-        padding:0 0 20px;
+        padding: 0 0 20px;
         width: 100%;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-
-
       }
-
       &-heading {
-        font-family: 'Red Hat Display',monospace;
+        font-family: "Red Hat Display", monospace;
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 48px;
-        color: #FFFFFF;
+        color: $white;
         @media screen and (max-width: $tablet-viewport) {
           font-size: 24px;
           text-align: center;
-
         }
-        }
-
+      }
       &-subheading {
-        font-family: 'Red Hat Display',monospace;
+        font-family: "Red Hat Display", monospace;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 24px;
-        color: #FFFFFF;
+        color: $white;
         @media screen and (max-width: $tablet-viewport) {
           text-align: center;
         }
-        }
-
+      }
       &-infor {
         @media screen and (max-width: $tablet-viewport) {
-        margin: auto;
+          margin: auto;
         }
         &-item {
           display: flex;
-          font-family: 'Red Hat Display',monospace;
+          font-family: "Red Hat Display", monospace;
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
           line-height: 24px;
-          color: #FFFFFF;
-
+          color: $white;
           img {
             margin-right: 10px;
           }
@@ -94,10 +73,7 @@ section.contact{
         &-item:nth-child(2) {
           margin: 30px 0;
         }
-
-
       }
-
     }
 
     .contact__form {
@@ -108,13 +84,12 @@ section.contact{
 
       width: 50%;
       @media screen and (max-width: $tablet-viewport) {
-        padding:0;
+        padding: 0;
         width: 100%;
         text-align: center;
-
       }
       &-heading {
-        font-family: 'Red Hat Display','monospace';
+        font-family: "Red Hat Display", "monospace";
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -123,10 +98,10 @@ section.contact{
         @media screen and (max-width: $tablet-viewport) {
           font-size: 24px;
         }
-        }
+      }
 
       &-subheading {
-        font-family: 'Red Hat Display',monospace;
+        font-family: "Red Hat Display", monospace;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -142,11 +117,11 @@ section.contact{
           margin-bottom: 56px;
           justify-content: space-between;
           @media screen and (max-width: $tablet-viewport) {
-            padding:0;
             width: 100%;
             flex-direction: column;
-            padding:12px;
+            padding: 12px;
             gap: 20px;
+            margin-bottom: 20px;
 
           }
 
@@ -155,8 +130,9 @@ section.contact{
             display: inline-block;
             border: none;
             width: 48%;
-            border-bottom: 1px solid #ccc;
-            font-family: 'Red Hat Display',monospace;
+            border-bottom: 1px solid $gray-400;
+            color: $gray-600;
+            font-family: "Red Hat Display", monospace;
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
@@ -164,45 +140,44 @@ section.contact{
             @media screen and (max-width: $tablet-viewport) {
               width: 100%;
             }
-            }
+          }
         }
         .form__user-content {
           border: none;
-          border-bottom: 1px solid #ccc;
+          border-bottom: 1px solid $gray-400;
           display: inline-block;
           width: 100%;
-          font-family: 'Red Hat Display',monospace;
+          font-family: "Red Hat Display", monospace;
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
           line-height: 24px;
-          color: #979797;
+          color: $gray-600;
           @media screen and (max-width: $tablet-viewport) {
-            padding: 12px;
+            margin: 12px;
           }
         }
-        textarea::placeholder{
-          color: #979797;
+        textarea::placeholder {
+          color: $gray-500;
           opacity: 1;
         }
-        .btn-contact{
+        .btn-contact {
           background: $primary;
           outline: none;
           border: none;
-          padding:10px 56px;
-          font-family: 'Red Hat Display',monospace;
+          padding: 10px 56px;
+          font-family: "Red Hat Display", monospace;
           font-style: normal;
           font-weight: 700;
           font-size: 14px;
           line-height: 19px;
           text-align: right;
           color: $white;
-          margin-top:16px;
+          margin-top: 16px;
           position: relative;
           z-index: 1;
         }
-
       }
-
     }
-  }}
+  }
+}

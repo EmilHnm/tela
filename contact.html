@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,136 +10,114 @@
 </head>
 
 <body>
-<header>
-  <div class="container">
-    <div class="logo">
-      <img src="assets/images/logo.png" alt="logo">
-      <span>tela</span>
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#document">Documentation</a></li>
-        <li><a href="#coverage">Coverage</a></li>
-      </ul>
-    </nav>
-    <div class="menu-toggle">
-      <button id="menu-open">
-        <img src="./assets/images/icon/burger.png" alt="">
-      </button>
-    </div>
-  </div>
-  <div class="responsive-header" id="responsive-header">
-    <div class="responsive-header__top">
-      <div class="responsive-header__top--logo">
+  <header>
+    <div class="container">
+      <div class="logo">
         <img src="assets/images/logo.png" alt="logo">
         <span>tela</span>
       </div>
-      <div class="responsive-header__top--toggle">
-        <button id="menu-close">
-          <img src="./assets/images/icon/cross.png" alt="">
+      <nav class="nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./index.html#coverage">Coverage</a></li>
+          <li><a href="./payment-methods.html">Fee</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <button id="menu-open">
+          <img src="./assets/images/icon/burger.png" alt="">
         </button>
       </div>
     </div>
-    <div class="responsive-header__menu">
-      <ul>
-        <li><a onclick="toggleMenu()" href="index.html">Home</a></li>
-        <li><a onclick="toggleMenu()" href="#">About</a></li>
-        <li><a onclick="toggleMenu()" href="#document">Documentation</a></li>
-        <li><a onclick="toggleMenu()" href="#coverage">Coverage</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
-<main>
-  <section class="contact">
-    <div class="container">
-      <div class="content">
-        <div class="contact__tela">
-          <h2 class="contact__tela-heading">
-            We’re here
-          </h2>
-          <p class="contact__tela-subheading">Our door is always open for a good cup of coffee.</p>
-          <ul class="contact__tela-infor">
-            <li class="contact__tela-infor-item">
-              <img src="./assets/images/location_icon.png" alt="" style="width: 17px; height: 23px">
-              <p>68 Circular Road # <br>02-01 Singapore 049422</p>
-            </li>
-            <li class="contact__tela-infor-item">
-              <img src="./assets/images/phone.png" alt="" style="width: 17px; height: 23px">
-              <p>+65 84187277</p>
-            </li>
-            <li class="contact__tela-infor-item">
-              <img src="./assets/images/mail.png" alt="" style="width: 23px; height:16px">
-              <p>hello@tela.io</p>
-            </li>
-          </ul>
-
+    <div class="responsive-header" id="responsive-header">
+      <div class="responsive-header__top">
+        <div class="responsive-header__top--logo">
+          <img src="assets/images/logo.png" alt="logo">
+          <span>tela</span>
         </div>
-        <div class="contact__form">
-             <h2 class="contact__form-heading">Let's talk</h2>
-          <p class="contact__form-subheading">Share your excitement with us.</p>
-          <form  id="contact-form" enctype=”multipart/form-data”>
-            <div class="form__group">
-              <input type="text" placeholder="Name" name="name" id="name">
-              <input type="text" name="email" placeholder="Email address" id="email">
-            </div>
-            <textarea placeholder="what's on your mind?" class="form__user-content"  cols="50" name="content" id="content" ></textarea>
-
-            <button class=" btn-contact"> Submit</button>
-          </form>
+        <div class="responsive-header__top--toggle">
+          <button id="menu-close">
+            <img src="./assets/images/icon/cross.png" alt="">
+          </button>
         </div>
-
+      </div>
+      <div class="responsive-header__menu">
+        <ul>
+          <li><a onclick="toggleMenu()" href="index.html">Home</a></li>
+          <li><a onclick="toggleMenu()" href="#">About</a></li>
+          <li><a onclick="toggleMenu()" href="#document">Documentation</a></li>
+          <li><a onclick="toggleMenu()" href="#coverage">Coverage</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-</main>
-<footer class="footer">
-  <div class="container">
-    <div class="footer__brand">
-      <img class="footer__brand-logo" src="./assets/images/logo-white.png" alt="">
-      <span class="footer__brand-name">tela</span>
+  </header>
+  <main>
+    <section class="contact">
+      <div class="container">
+        <div class="content">
+          <div class="contact__tela">
+            <h2 class="contact__tela-heading">
+              We’re here
+            </h2>
+            <p class="contact__tela-subheading">Our door is always open for a good cup of coffee.</p>
+            <ul class="contact__tela-infor">
+              <li class="contact__tela-infor-item">
+                <img src="./assets/images/location_icon.png" alt="" style="width: 17px; height: 23px">
+                <p>68 Circular Road # <br>02-01 Singapore 049422</p>
+              </li>
+              <li class="contact__tela-infor-item">
+                <img src="./assets/images/phone.png" alt="" style="width: 17px; height: 23px">
+                <p>+65 84187277</p>
+              </li>
+              <li class="contact__tela-infor-item">
+                <img src="./assets/images/mail.png" alt="" style="width: 23px; height:16px">
+                <p>hello@tela.io</p>
+              </li>
+            </ul>
+          </div>
+          <div class="contact__form">
+            <h2 class="contact__form-heading">Let's talk</h2>
+            <p class="contact__form-subheading">Share your excitement with us.</p>
+            <form id="contact-form" enctype=”multipart/form-data”>
+              <div class="form__group">
+                <input type="text" placeholder="Name" name="name" id="name">
+                <input type="text" name="email" placeholder="Email address" id="email">
+              </div>
+              <textarea placeholder="What's on your mind?" class="form__user-content" cols="50" name="content"
+                id="content"></textarea>
+              <button class=" btn-contact"> Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand">
+        <img class="footer__brand-logo" src="./assets/images/logo-white.png" alt="">
+        <span class="footer__brand-name">tela</span>
+      </div>
+      <div class="footer__contact">
+        <span>hello@te-la.io</span>
+      </div>
+      <div class="footer__nav">
+        <a href="./index.html" class="footer__nav--item">Home</a>
+        <a href="./about.html" class="footer__nav--item">About</a>
+        <a href="./index.html#covrage" class="footer__nav--item">Coverage</a>
+        <a href="./payment-methods.html" class="footer__nav--item">Fee</a>
+      </div>
     </div>
-    <div class="footer__contact">
-      <span>hello@te-la.io</span>
+    <div class="footer__legal">
+      <p>
+        Tela Technologies Pte. Ltd. is a Singapore registered company with registration number 202309150E. <br>
+        Registered office: 68 Circular Road #02-01 Singapore 049422
+      </p>
     </div>
-    <div class="footer__nav">
-      <a href="#" class="footer__nav--item">Home</a>
-      <a href="#" class="footer__nav--item">About</a>
-      <a href="#document" class="footer__nav--item">Documentation</a>
-      <a href="#covrage" class="footer__nav--item">Coverage</a>
-    </div>
-  </div>
-  <div class="footer__legal">
-    <p>
-      Tela Technologies Pte. Ltd. is a Singapore registered company with registration number 202309150E. <br>
-      Registered office: 68 Circular Road #02-01 Singapore 049422
-    </p>
-  </div>
-</footer>
-
-<script src="./assets/js/app.js"></script>
-<script>
-let contact_form = document.getElementById('contact-form');
-let form_data = new FormData();
-form_data.append('name', document.getElementById('name').value);
-form_data.append('email', document.getElementById('email').value);
-form_data.append('content', document.getElementById('content').value);
-contact_form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    fetch('./send_email.php',{
-      method: "POST",
-      headers: {
-        "Content-Type": "multipart/form-data"
-      },
-      body: form_data
-    }).then(result => result.json())
-            .then(result => console.log(result))
-  })
-
-</script>
-
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/app-contact.js"></script>
 </body>
-
 </html>
