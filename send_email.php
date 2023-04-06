@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         return;
     }
     send_email(
-        'hoangominh01@gmail.com',
+        'hello@te-la.io',
         'Hello Tela',
         'Contact User',
         "<div>
