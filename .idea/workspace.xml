@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="95a8f250-1208-4ec1-a2e7-28ac2bca00c5" name="Changes" comment="contact form">
+      <change beforePath="$PROJECT_DIR$/assets/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/layout/contact/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/layout/contact/_contact.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1680745687" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1680713029" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="admin" />
+                    <option name="lastUsedInstant" value="1680441176" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectId" id="2Niqkfkkrhgcfj0DlpJlPmfqdIX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.laravel-idea.search-composer-json": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/vannghia/Documents/webroot/onelib-qa",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resource" />
+      <recent name="$PROJECT_DIR$/assets/resource" />
+      <recent name="$PROJECT_DIR$/src/libs" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/resource" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95a8f250-1208-4ec1-a2e7-28ac2bca00c5" name="Changes" comment="" />
+      <created>1680157394686</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680157394686</updated>
+      <workItem from="1680157398891" duration="698000" />
+      <workItem from="1680177064588" duration="2918000" />
+      <workItem from="1680225678314" duration="700000" />
+      <workItem from="1680273471164" duration="2025000" />
+      <workItem from="1680313171277" duration="876000" />
+      <workItem from="1680438066496" duration="3195000" />
+      <workItem from="1680447273226" duration="2286000" />
+      <workItem from="1680538140013" duration="3132000" />
+      <workItem from="1680572681703" duration="8295000" />
+      <workItem from="1680595514437" duration="1381000" />
+      <workItem from="1680622631617" duration="2103000" />
+      <workItem from="1680680528127" duration="2535000" />
+      <workItem from="1680684157910" duration="6919000" />
+      <workItem from="1680707030010" duration="6673000" />
+      <workItem from="1680744792624" duration="2027000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix responsive">
+      <created>1680273558576</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680273558576</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add scroll  on feature">
+      <created>1680274731487</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680274731487</updated>
+    </task>
+    <task id="LOCAL-00003" summary="modify land__item to flex row">
+      <created>1680274802471</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680274802471</updated>
+    </task>
+    <task id="LOCAL-00004" summary="modify land__item to flex row">
+      <created>1680275027994</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680275027994</updated>
+    </task>
+    <task id="LOCAL-00005" summary="modify dismentions of map__land -item">
+      <created>1680275408412</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680275408413</updated>
+    </task>
+    <task id="LOCAL-00006" summary="modify content of last feature item">
+      <created>1680439563484</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680439563484</updated>
+    </task>
+    <task id="LOCAL-00007" summary="modify text of title">
+      <created>1680446832866</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680446832866</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add phpmailer">
+      <created>1680595276451</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680595276451</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add phpmailer">
+      <created>1680595597730</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680595597730</updated>
+    </task>
+    <task id="LOCAL-00010" summary="contact form">
+      <created>1680712134981</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680712134981</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix responsive" />
+    <MESSAGE value="add scroll  on feature" />
+    <MESSAGE value="modify land__item to flex row" />
+    <MESSAGE value="modify dismentions of map__land -item" />
+    <MESSAGE value="modify content of last feature item" />
+    <MESSAGE value="modify text of title" />
+    <MESSAGE value="add phpmailer" />
+    <MESSAGE value="contact form" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact form" />
+  </component>
+</project>

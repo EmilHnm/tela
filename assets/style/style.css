@@ -3559,13 +3559,10 @@ html {
   padding: 0 !important;
 }
 
-body {
-  height: 100vh !important;
-}
-
 main {
   margin: 100px 0px;
   padding: 0 180px;
+  min-height: calc(100vh - 174px);
 }
 @media screen and (max-width: 768px) {
   main {
@@ -3599,13 +3596,12 @@ section.contact .content .contact__tela {
   section.contact .content .contact__tela {
     padding: 0 0 20px;
     width: 100%;
-    text-align: center;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 }
 section.contact .content .contact__tela-heading {
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display", monospace;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -3615,15 +3611,21 @@ section.contact .content .contact__tela-heading {
 @media screen and (max-width: 768px) {
   section.contact .content .contact__tela-heading {
     font-size: 24px;
+    text-align: center;
   }
 }
 section.contact .content .contact__tela-subheading {
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  section.contact .content .contact__tela-subheading {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 768px) {
   section.contact .content .contact__tela-infor {
@@ -3632,7 +3634,7 @@ section.contact .content .contact__tela-subheading {
 }
 section.contact .content .contact__tela-infor-item {
   display: flex;
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -3663,7 +3665,7 @@ section.contact .content .contact__form {
   }
 }
 section.contact .content .contact__form-heading {
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display", "monospace";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -3676,7 +3678,7 @@ section.contact .content .contact__form-heading {
   }
 }
 section.contact .content .contact__form-subheading {
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -3696,6 +3698,7 @@ section.contact .content .contact__form form .form__group {
     width: 100%;
     flex-direction: column;
     padding: 12px;
+    gap: 20px;
   }
 }
 section.contact .content .contact__form form .form__group input {
@@ -3704,7 +3707,7 @@ section.contact .content .contact__form form .form__group input {
   border: none;
   width: 48%;
   border-bottom: 1px solid #ccc;
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display", monospace;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -3720,12 +3723,17 @@ section.contact .content .contact__form form .form__user-content {
   border-bottom: 1px solid #ccc;
   display: inline-block;
   width: 100%;
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display", monospace;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #979797;
+}
+@media screen and (max-width: 768px) {
+  section.contact .content .contact__form form .form__user-content {
+    padding: 12px;
+  }
 }
 section.contact .content .contact__form form textarea::placeholder {
   color: #979797;
@@ -3736,7 +3744,7 @@ section.contact .content .contact__form form .btn-contact {
   outline: none;
   border: none;
   padding: 10px 56px;
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display", monospace;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
