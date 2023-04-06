@@ -19,7 +19,7 @@
     </div>
     <nav class="nav">
       <ul>
-        <li><a href="./index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#document">Documentation</a></li>
         <li><a href="#coverage">Coverage</a></li>
@@ -45,7 +45,7 @@
     </div>
     <div class="responsive-header__menu">
       <ul>
-        <li><a onclick="toggleMenu()" href="./index.html">Home</a></li>
+        <li><a onclick="toggleMenu()" href="index.html">Home</a></li>
         <li><a onclick="toggleMenu()" href="#">About</a></li>
         <li><a onclick="toggleMenu()" href="#document">Documentation</a></li>
         <li><a onclick="toggleMenu()" href="#coverage">Coverage</a></li>
@@ -81,12 +81,12 @@
         <div class="contact__form">
              <h2 class="contact__form-heading">Let's talk</h2>
           <p class="contact__form-subheading">Share your excitement with us.</p>
-          <form action="">
+          <form  id="contact-form" enctype=”multipart/form-data”>
             <div class="form__group">
-              <input type="text" placeholder="Name" name="name">
-              <input type="text" name="email" placeholder="Email address">
+              <input type="text" placeholder="Name" name="name" id="name">
+              <input type="text" name="email" placeholder="Email address" id="email">
             </div>
-            <textarea placeholder="what's on your mind?" class="form__user-content"  cols="50" ></textarea>
+            <textarea placeholder="what's on your mind?" class="form__user-content"  cols="50" name="content" id="content" ></textarea>
 
             <button class=" btn-contact"> Submit</button>
           </form>
@@ -122,6 +122,22 @@
 
 <script src="./assets/js/app.js"></script>
 <script>
+let contact_form = document.getElementById('contact-form');
+let form_data = new FormData();
+form_data.append('name', document.getElementById('name').value);
+form_data.append('email', document.getElementById('email').value);
+form_data.append('content', document.getElementById('content').value);
+contact_form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    fetch('./send_email.php',{
+      method: "POST",
+      headers: {
+        "Content-Type": "multipart/form-data"
+      },
+      body: form_data
+    }).then(result => result.json())
+            .then(result => console.log(result))
+  })
 
 </script>
 
