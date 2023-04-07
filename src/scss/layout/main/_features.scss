@@ -61,6 +61,7 @@ section.features {
             & .features_item {
                 color: $gray-900;
                 font-family: 'Red Hat Display';
+                opacity: 0.5;
                 font-style: normal;
                 margin: 25px auto;
                 user-select: none;
@@ -79,8 +80,10 @@ section.features {
             }
                 &.active {
                     color: $primary;
+                    opacity: 1;
                     @media screen and (min-width: $tablet-viewport) {
                         &::after{
+                            opacity: 1;
                             content: "";
                             display: block;
                             position:absolute;

@@ -121,7 +121,7 @@ a {
 }
 
 header {
-  background: transparent;
+  background: #fff;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -699,6 +699,7 @@ section.features .container .content .features__title {
 section.features .container .content .features_item {
   color: #212529;
   font-family: "Red Hat Display";
+  opacity: 0.5;
   font-style: normal;
   margin: 25px auto;
   user-select: none;
@@ -718,9 +719,11 @@ section.features .container .content .features_item {
 }
 section.features .container .content .features_item.active {
   color: #4479FF;
+  opacity: 1;
 }
 @media screen and (min-width: 768px) {
   section.features .container .content .features_item.active::after {
+    opacity: 1;
     content: "";
     display: block;
     position: absolute;
@@ -1361,7 +1364,7 @@ section.introduction .container .introduction__content {
 }
 section.introduction .container .introduction__content .introduction__title {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 40px;
   line-height: 101.99%;
   color: #4479FF;
@@ -3705,7 +3708,7 @@ section.contact .content .contact__form form .form__group input {
   color: #6c757d;
   font-family: "Red Hat Display", monospace;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   line-height: 24px;
 }
@@ -3721,7 +3724,7 @@ section.contact .content .contact__form form .form__user-content {
   width: 100%;
   font-family: "Red Hat Display", monospace;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #6c757d;
