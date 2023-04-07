@@ -7,7 +7,7 @@
     margin-bottom: 20px;
     min-height: 100px;
     @media screen and (max-width: $tablet-viewport) {
-        min-width:calc(100vw - 110px) ;
+        min-width:100vw ;
     }
     &-content {
         display: flex;
