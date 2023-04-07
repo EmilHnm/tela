@@ -868,6 +868,8 @@ section.coverage .map-wrapper #country-popup {
 @media screen and (max-width: 490px) {
   section.coverage .map-wrapper #country-popup {
     max-width: 100%;
+    left: 50%;
+    translate: -50%;
     overflow: hidden;
   }
 }
@@ -886,6 +888,7 @@ section.coverage .map-wrapper #country-popup ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
+    flex-direction: column;
   }
 }
 section.coverage .map-wrapper #country-popup ul li {
@@ -898,6 +901,11 @@ section.coverage .map-wrapper #country-popup ul li:not(:last-of-type):after {
   content: "•";
   right: clamp(-2px, 1vw, -15px);
   position: absolute;
+}
+@media screen and (max-width: 490px) {
+  section.coverage .map-wrapper #country-popup ul li:not(:last-of-type):after {
+    display: none;
+  }
 }
 section.coverage .map-wrapper #country-popup:after {
   content: "";
@@ -1698,18 +1706,14 @@ section.mission .container .mission__content--featured .featured-container img {
 }
 @media screen and (max-width: 768px) {
   .partner__title {
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    backdrop-filter: blur(3px);
-    text-shadow: 0 0 12px #fff;
     font-size: 36px;
+    top: 5%;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .partner__title {
+    font-size: 22px;
   }
 }
 .partner__bg {
@@ -3233,7 +3237,7 @@ table > tr {
 
 @media print {
   .notion-light-theme code[class*=language-],
-.notion-light-theme pre[class*=language-] {
+  .notion-light-theme pre[class*=language-] {
     text-shadow: none;
   }
 }
@@ -3299,7 +3303,7 @@ table > tr {
 .notion-light-theme .style .token.string {
   color: #9a6e3a;
   /* This background color was intended by the author of this theme. */
-  background: hsla(0deg, 0%, 100%, 0.5);
+  background: hsla(0, 0%, 100%, 0.5);
 }
 
 .notion-light-theme .token.atrule,
@@ -3361,13 +3365,13 @@ table > tr {
 
 @media print {
   .notion-dark-theme code[class*=language-],
-.notion-dark-theme pre[class*=language-] {
+  .notion-dark-theme pre[class*=language-] {
     text-shadow: none;
   }
 }
 .notion-dark-theme pre[class*=language-],
 .notion-dark-theme :not(pre) > code[class*=language-] {
-  background: hsl(30deg, 20%, 25%);
+  background: hsl(30, 20%, 25%);
 }
 
 /* Code blocks */
@@ -3375,7 +3379,7 @@ table > tr {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
-  border: 0.3em solid hsl(30deg, 20%, 40%);
+  border: 0.3em solid hsl(30, 20%, 40%);
   border-radius: 0.5em;
   box-shadow: 1px 1px 0.5em black inset;
 }
@@ -3384,7 +3388,7 @@ table > tr {
 .notion-dark-theme :not(pre) > code[class*=language-] {
   padding: 0.15em 0.2em 0.05em;
   border-radius: 0.3em;
-  border: 0.13em solid hsl(30deg, 20%, 40%);
+  border: 0.13em solid hsl(30, 20%, 40%);
   box-shadow: 1px 1px 0.3em -0.1em black inset;
   white-space: normal;
 }
@@ -3393,7 +3397,7 @@ table > tr {
 .notion-dark-theme .token.prolog,
 .notion-dark-theme .token.doctype,
 .notion-dark-theme .token.cdata {
-  color: hsl(30deg, 20%, 50%);
+  color: hsl(30, 20%, 50%);
 }
 
 .notion-dark-theme .token.punctuation {
@@ -3410,7 +3414,7 @@ table > tr {
 .notion-dark-theme .token.number,
 .notion-dark-theme .token.constant,
 .notion-dark-theme .token.symbol {
-  color: hsl(350deg, 40%, 70%);
+  color: hsl(350, 40%, 70%);
 }
 
 .notion-dark-theme .token.selector,
@@ -3420,7 +3424,7 @@ table > tr {
 .notion-dark-theme .token.builtin,
 .notion-dark-theme .token.inserted,
 .notion-dark-theme .token.inserted + .token.line {
-  color: hsl(75deg, 70%, 60%);
+  color: hsl(75, 70%, 60%);
 }
 
 .notion-dark-theme .token.operator,
@@ -3429,13 +3433,13 @@ table > tr {
 .notion-dark-theme .language-css .token.string,
 .notion-dark-theme .style .token.string,
 .notion-dark-theme .token.variable {
-  color: hsl(40deg, 90%, 60%);
+  color: hsl(40, 90%, 60%);
 }
 
 .notion-dark-theme .token.atrule,
 .notion-dark-theme .token.attr-value,
 .notion-dark-theme .token.keyword {
-  color: hsl(350deg, 40%, 70%);
+  color: hsl(350, 40%, 70%);
 }
 
 .notion-dark-theme .token.regex,
