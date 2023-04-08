@@ -10,6 +10,7 @@ feature_item.forEach((element) => {
         if (element) {
             element.classList.add('active');
             features_desciption.innerText = element.childNodes[3].textContent;
+            console.log(element.childNodes[3].textContent);
             tabs_video.src = `./assets/images/${element.getAttribute('data-feature')}.mp4`;
         }
     });

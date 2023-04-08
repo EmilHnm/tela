@@ -63,6 +63,8 @@ section.coverage {
             box-sizing: border-box;
             @media screen and (max-width: $mobile-viewport) {
                 max-width: 100%;
+                left: 50%;
+                translate: -50%;
                 overflow: hidden;
             }
             & strong {
@@ -78,6 +80,7 @@ section.coverage {
                     flex-wrap: wrap;
                     justify-content: center;
                     gap: 5px;
+                    flex-direction: column;
                 }
             }
             & ul li {
@@ -89,7 +92,10 @@ section.coverage {
             & ul li:not(:last-of-type):after {
                 content: "\2022";
                 right: clamp(-2px, 1vw, -15px);
-                position: absolute
+                position: absolute;
+                @media screen and (max-width: $mobile-viewport) {
+                    display: none;
+                }
             }
 
             &:after {
