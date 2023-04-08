@@ -11,6 +11,7 @@ feature_item.forEach((element: Node) => {
         {
             (element as HTMLElement).classList.add('active');
             features_desciption.innerText = (element as HTMLElement).childNodes[3].textContent as string;
+            console.log((element as HTMLElement).childNodes[3].textContent);
             tabs_video.src = `./assets/images/${(element as HTMLElement).getAttribute('data-feature')}.mp4`;
         }
         

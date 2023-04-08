@@ -56,6 +56,7 @@ section.features {
                 @media screen and (max-width: $tablet-viewport) {
                     font-size: 24px;
                     line-height: 32px;
+                     
                 }
             }
             & .features_item {
@@ -67,35 +68,40 @@ section.features {
                 user-select: none;
                 cursor: pointer;
                 position: relative;
-                @media screen and (min-width: $tablet-viewport) {
-                &::after{
-                    content: "";
-                    display: block;
-                    position:absolute;
-                    left: -16px;
-                    bottom: 0;
-                    top:0;
-                    border: 2px solid #f1eeeecc;
+                @media screen and (max-width: $tablet-viewport) {
+                    text-align: left;
+                    max-width: 80%;
+                    padding-left: 20px;
+                    padding-right: 4px;
+                    &::after{
+                        content: "";
+                        display: block;
+                        position:absolute;
+                        left: 0px;
+                        bottom: 0;
+                        top:0;
+                        border: 2px solid $white;
+                    }
                 }
-            }
                 &.active {
                     color: $primary;
                     opacity: 1;
-                    @media screen and (min-width: $tablet-viewport) {
+                    @media screen and (max-width: $tablet-viewport) {
+                        color: $white;
+                        background-color: $primary;
+                        border-radius: 5px;
                         &::after{
                             opacity: 1;
                             content: "";
                             display: block;
                             position:absolute;
-                            left: -16px;
-                            bottom: 0;
-                            top:0;
-                            border: 2px solid $primary;
-    
+                            left: 5px;
+                            height: 60%;
+                            top:50%;
+                            transform: translateY(-50%);
+                            border: 2px solid $white;
                         }
                     }
-                       
-                 
                 }
                 & h3 {
                     font-weight: 700;
