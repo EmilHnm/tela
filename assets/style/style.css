@@ -3252,7 +3252,7 @@ table > tr {
 
 @media print {
   .notion-light-theme code[class*=language-],
-  .notion-light-theme pre[class*=language-] {
+.notion-light-theme pre[class*=language-] {
     text-shadow: none;
   }
 }
@@ -3380,7 +3380,7 @@ table > tr {
 
 @media print {
   .notion-dark-theme code[class*=language-],
-  .notion-dark-theme pre[class*=language-] {
+.notion-dark-theme pre[class*=language-] {
     text-shadow: none;
   }
 }
