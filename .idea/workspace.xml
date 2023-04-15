@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95a8f250-1208-4ec1-a2e7-28ac2bca00c5" name="Changes" comment="contact form">
-      <change beforePath="$PROJECT_DIR$/assets/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/layout/contact/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/layout/contact/_contact.scss" afterDir="false" />
+    <list default="true" id="95a8f250-1208-4ec1-a2e7-28ac2bca00c5" name="Changes" comment="change margin-top on payment-methods.html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +33,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1680745687" />
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1681230688" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1680713029" />
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1680745687" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="admin" />
@@ -74,13 +71,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.laravel-idea.search-composer-json": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/vannghia/Documents/webroot/onelib-qa",
+    "last_opened_file_path": "/home/vannghia/Documents/webroot/tmp/tela",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "/snap/phpstorm/329/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -118,6 +116,21 @@
       <workItem from="1680684157910" duration="6919000" />
       <workItem from="1680707030010" duration="6673000" />
       <workItem from="1680744792624" duration="2027000" />
+      <workItem from="1680772480027" duration="88000" />
+      <workItem from="1680786966136" duration="41000" />
+      <workItem from="1680787116972" duration="714000" />
+      <workItem from="1680788088021" duration="2074000" />
+      <workItem from="1680798202064" duration="1159000" />
+      <workItem from="1680830204832" duration="640000" />
+      <workItem from="1680837000508" duration="22000" />
+      <workItem from="1680857875037" duration="170000" />
+      <workItem from="1680860104298" duration="422000" />
+      <workItem from="1680862786817" duration="1643000" />
+      <workItem from="1680864484800" duration="29000" />
+      <workItem from="1680872797098" duration="10175000" />
+      <workItem from="1680922071159" duration="2079000" />
+      <workItem from="1681091364318" duration="627000" />
+      <workItem from="1681230325859" duration="1254000" />
     </task>
     <task id="LOCAL-00001" summary="fix responsive">
       <created>1680273558576</created>
@@ -189,7 +202,84 @@
       <option name="project" value="LOCAL" />
       <updated>1680712134981</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add link to contact page and modify margin of contact section">
+      <created>1680767004324</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680767004324</updated>
+    </task>
+    <task id="LOCAL-00012" summary="change receiver email">
+      <created>1680768273427</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680768273427</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix responsive menu">
+      <created>1680788161808</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680788161808</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix responsive menu">
+      <created>1680789045234</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680789045234</updated>
+    </task>
+    <task id="LOCAL-00015" summary="remove">
+      <created>1680858031698</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680858031698</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix link on responsive menu">
+      <created>1680860315008</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680860315008</updated>
+    </task>
+    <task id="LOCAL-00017" summary="modify figma">
+      <created>1680864498136</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680864498138</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add off-ramp">
+      <created>1680889410306</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680889410306</updated>
+    </task>
+    <task id="LOCAL-00019" summary="modify images flags country">
+      <created>1680923558018</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680923558018</updated>
+    </task>
+    <task id="LOCAL-00020" summary="workspace">
+      <created>1681230672619</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1681230672619</updated>
+    </task>
+    <task id="LOCAL-00021" summary="change margin-top on payment-methods.html">
+      <created>1681231048015</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1681231048015</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +305,16 @@
     <MESSAGE value="modify text of title" />
     <MESSAGE value="add phpmailer" />
     <MESSAGE value="contact form" />
-    <option name="LAST_COMMIT_MESSAGE" value="contact form" />
+    <MESSAGE value="add link to contact page and modify margin of contact section" />
+    <MESSAGE value="change receiver email" />
+    <MESSAGE value="fix responsive menu" />
+    <MESSAGE value="remove" />
+    <MESSAGE value="fix link on responsive menu" />
+    <MESSAGE value="modify figma" />
+    <MESSAGE value="add off-ramp" />
+    <MESSAGE value="modify images flags country" />
+    <MESSAGE value="workspace" />
+    <MESSAGE value="change margin-top on payment-methods.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="change margin-top on payment-methods.html" />
   </component>
 </project>
